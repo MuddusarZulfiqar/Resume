@@ -1,0 +1,316 @@
+{
+  "profile": {
+    "name": "Muddusar Zulfiqar",
+    "lastName": "Zulfiqar",
+    "title": "Senior Software Engineer",
+    "tagline": "Building fast, accessible, and scalable web apps with React, Next.js & TypeScript",
+    "stack": ["React.js", "Next.js", "Vue.js", "Nuxt.js", "TypeScript", "JavaScript"],
+    "email": "muddusarzulfiqar@gmail.com",
+    "phone": "+92 (346) 6281954",
+    "website": "marrydev.com",
+    "github": "https://github.com/MuddusarZulfiqar",
+    "linkedin": "https://www.linkedin.com/in/muddusar-zulfiqar/",
+    "resumeUrl": "/Muddusar_Zulfiqar_Resume.pdf",
+    "location": "Pakistan · Open to Remote · On-Site",
+    "summary": "Senior Software Engineer with 7+ years building fast, accessible, and scalable web applications for international clients and distributed teams. Specialized in React, Next.js, Vue.js, Nuxt.js, and TypeScript, with strong full-stack depth across the MERN and MEVN stacks — Node.js, Express.js, and MongoDB — plus hands-on experience integrating AI/ML features using Python and modern AI APIs. Currently a Senior Software Engineer and frontend lead at PureLogics, mentoring a team of 15 engineers and owning delivery from architecture through launch in remote-first, cross-functional environments.",
+    "yearsOfExp": "7+",
+    "engineersMentored": "15",
+    "perfIncrease": "30%",
+    "projectsDelivered": "20+",
+    "activeUsers": "300K+",
+    "contractImpact": "$2M+"
+  },
+  "theme": {
+    "primary": "#18181b",
+    "accent": "#a1a1aa",
+    "highlight": "#34d399",
+    "background": "#ffffff",
+    "text": "#18181b"
+  },
+  "skills": [
+    {
+      "category": "Frontend & Frameworks",
+      "items": ["React.js", "Next.js", "Vue.js", "Nuxt.js", "JavaScript", "TypeScript", "HTML5", "CSS3", "SCSS"]
+    },
+    {
+      "category": "State & Performance",
+      "items": ["Redux Toolkit", "TanStack Query", "Core Web Vitals", "SSR / SSG / ISR", "Code Splitting", "Bundle Optimization", "Accessibility (a11y)", "Responsive Design"]
+    },
+    {
+      "category": "Backend & APIs",
+      "items": ["Node.js", "Express.js", "NestJS", "MongoDB", "REST APIs", "MERN Stack", "MEVN Stack"]
+    },
+    {
+      "category": "AI/ML & Data",
+      "items": ["Python", "AI/ML Integration", "AI APIs / LLM Integration", "Data Science (Fundamentals)"]
+    },
+    {
+      "category": "Tooling & DevOps",
+      "items": ["Git / GitHub", "Vite", "Webpack", "Babel", "Docker", "AWS", "CI/CD", "Linux"]
+    }
+  ],
+  "experience": [
+    {
+      "company": "PureLogics",
+      "role": "Senior Software Engineer — Frontend Lead",
+      "period": "Jul 2022 – Present",
+      "location": "Remote · Lahore, Pakistan",
+      "description": [
+        "Progressed from Software Engineer to Senior Software Engineer, leading frontend development across multiple scalable web applications for international clients.",
+        "Mentor and provide technical guidance to a team of 15 engineers, raising team-wide code quality and delivery through code reviews, pair programming, and hands-on coaching.",
+        "Architected responsive interfaces in React.js, Vue.js, and SCSS, improving Lighthouse performance scores by 25% and reducing page load times by 30% via code splitting, lazy loading, and reusable component architecture.",
+        "Contribute to architectural and strategic decisions across TypeScript, Node.js, Express.js, and MongoDB, aligning technical solutions with broader business objectives.",
+        "Collaborate asynchronously with cross-functional, distributed teams to ship features on schedule in a remote-first environment."
+      ]
+    },
+    {
+      "company": "TechOrix",
+      "role": "Frontend Web Developer",
+      "period": "Feb 2022 – Jul 2022",
+      "location": "Lahore, Pakistan",
+      "description": [
+        "Built responsive, high-performance web applications in React.js and Next.js, delivering consistent experiences across devices.",
+        "Implemented accessible, multilingual interfaces with strong attention to UI/UX and performance optimization.",
+        "Partnered with cross-functional teams to ship goal-aligned frontend solutions and adopt modern workflows."
+      ]
+    },
+    {
+      "company": "Upwork",
+      "role": "Freelance Frontend Developer",
+      "period": "Oct 2021 – Jan 2022",
+      "location": "Remote",
+      "description": [
+        "Delivered frontend development for international clients across 20 projects, building responsive interfaces to high code-quality standards.",
+        "Translated client requirements into clean, maintainable React and JavaScript components under tight timelines."
+      ]
+    },
+    {
+      "company": "LogicsDrive",
+      "role": "Frontend Developer",
+      "period": "Jul 2020 – Sep 2021",
+      "location": "Lahore, Pakistan",
+      "description": [
+        "Developed visually polished, responsive user interfaces with React.js, Vue.js, jQuery, and SCSS, maintaining high code-quality standards.",
+        "Stayed current with modern tools and techniques to continuously improve delivery quality and consistency."
+      ]
+    },
+    {
+      "company": "Tetralogicx",
+      "role": "Frontend Developer",
+      "period": "Feb 2020 – Jul 2020",
+      "location": "Lahore, Pakistan",
+      "description": [
+        "Built responsive, scalable interfaces with JavaScript, jQuery, and Liquid that integrated cleanly with backend systems."
+      ]
+    },
+    {
+      "company": "NexTash",
+      "role": "Web Development Intern",
+      "period": "Sep 2019 – Feb 2020",
+      "location": "Lahore, Pakistan",
+      "description": [
+        "Contributed to website development and company-profile management, strengthening core web development and communication skills."
+      ]
+    }
+  ],
+    "experience": [
+    {
+      "company": "PureLogics",
+      "role": "Senior Software Engineer — Frontend Lead",
+      "period": "Jul 2022 – Present",
+      "location": "Remote · Lahore, Pakistan",
+      "description": [
+        "Progressed from Software Engineer to Senior Software Engineer, leading frontend development across multiple scalable web applications for international clients.",
+        "Mentor and provide technical guidance to a team of 15 engineers, raising team-wide code quality and delivery through code reviews, pair programming, and hands-on coaching.",
+        "Architected responsive interfaces in React.js, Vue.js, and SCSS, improving Lighthouse performance scores by 25% and reducing page load times by 30% via code splitting, lazy loading, and reusable component architecture.",
+        "Contribute to architectural and strategic decisions across TypeScript, Node.js, Express.js, and MongoDB, aligning technical solutions with broader business objectives.",
+        "Collaborate asynchronously with cross-functional, distributed teams to ship features on schedule in a remote-first environment."
+      ]
+    },
+    {
+      "company": "TechOrix",
+      "role": "Frontend Web Developer",
+      "period": "Feb 2022 – Jul 2022",
+      "location": "Lahore, Pakistan",
+      "description": [
+        "Built responsive, high-performance web applications in React.js and Next.js, delivering consistent experiences across devices.",
+        "Implemented accessible, multilingual interfaces with strong attention to UI/UX and performance optimization.",
+        "Partnered with cross-functional teams to ship goal-aligned frontend solutions and adopt modern workflows."
+      ]
+    },
+    {
+      "company": "Upwork",
+      "role": "Freelance Frontend Developer",
+      "period": "Oct 2021 – Jan 2022",
+      "location": "Remote",
+      "description": [
+        "Delivered frontend development for international clients across 20 projects, building responsive interfaces to high code-quality standards.",
+        "Translated client requirements into clean, maintainable React and JavaScript components under tight timelines."
+      ]
+    },
+    {
+      "company": "LogicsDrive",
+      "role": "Frontend Developer",
+      "period": "Jul 2020 – Sep 2021",
+      "location": "Lahore, Pakistan",
+      "description": [
+        "Developed visually polished, responsive user interfaces with React.js, Vue.js, jQuery, and SCSS, maintaining high code-quality standards.",
+        "Stayed current with modern tools and techniques to continuously improve delivery quality and consistency."
+      ]
+    },
+    {
+      "company": "Tetralogicx",
+      "role": "Frontend Developer",
+      "period": "Feb 2020 – Jul 2020",
+      "location": "Lahore, Pakistan",
+      "description": [
+        "Built responsive, scalable interfaces with JavaScript, jQuery, and Liquid that integrated cleanly with backend systems."
+      ]
+    },
+    {
+      "company": "NexTash",
+      "role": "Web Development Intern",
+      "period": "Sep 2019 – Feb 2020",
+      "location": "Lahore, Pakistan",
+      "description": [
+        "Contributed to website development and company-profile management, strengthening core web development and communication skills."
+      ]
+    }
+  ],
+  "projects": [
+    {
+      "title": "Sliced Health",
+      "category": "Healthcare Analytics",
+      "impact": "25% Faster Frontend",
+      "tags": ["React.js", "TypeScript", "TanStack Query", "Material UI"],
+      "description": "Healthcare dashboards and analytics workflows with responsive, scalable interfaces.",
+      "longDescription": "Led frontend development for a healthcare analytics platform, building responsive, scalable dashboards that surface complex clinical and operational data clearly. Improved frontend performance by 25% and streamlined data-heavy workflows used by a team of 20+ members.",
+      "features": [
+        "Interactive analytics dashboards built with React.js and TypeScript",
+        "Efficient server-state management with TanStack Query",
+        "Consistent, accessible UI using a Material UI component system",
+        "Performance-tuned rendering for large, data-dense views"
+      ],
+      "link": "https://slicedhealth.com/"
+    },
+    {
+      "title": "SES-DLC Website & Web App",
+      "category": "Full-Stack Platform",
+      "impact": "30% Less Dev Time",
+      "tags": ["React.js", "Vue.js", "Node.js", "Express.js", "TypeScript", "MongoDB"],
+      "description": "Full-stack web applications with responsive UIs, API integrations, and reusable components.",
+      "longDescription": "Developed and maintained full-stack web applications delivering responsive user interfaces, secure authentication, and clean API integrations. A shared, reusable component architecture cut development time by roughly 30% across features.",
+      "features": [
+        "Responsive frontends in React.js and Vue.js",
+        "Node.js / Express.js REST API integration and authentication",
+        "Reusable component library standardizing UI across the app",
+        "TypeScript end-to-end for maintainability and type safety"
+      ],
+      "link": "https://saveenergysystems.com"
+    },
+    {
+      "title": "Melbourne City Limo",
+      "category": "Booking Platform",
+      "impact": "Streamlined Bookings",
+      "tags": ["React.js", "Node.js", "Express.js", "MongoDB", "REST APIs"],
+      "description": "Full-stack booking web application with responsive flows and mobile-friendly interfaces.",
+      "longDescription": "Built a full-stack booking platform with smooth, responsive booking flows, robust form validation, and mobile-first interfaces. Integrated REST APIs across the stack to deliver a scalable, reliable reservation experience.",
+      "features": [
+        "End-to-end booking flow with client-side validation",
+        "Mobile-friendly, responsive interface",
+        "REST API integration with a Node.js / Express.js backend",
+        "MongoDB-backed reservation and customer data"
+      ],
+      "link": "https://melbournecitylimo.com.au/"
+    },
+    {
+      "title": "Open-Source Boilerplates",
+      "category": "Developer Tooling",
+      "impact": "40% Faster Setup",
+      "tags": ["React.js", "Vue.js", "TypeScript", "Vite", "ESLint"],
+      "description": "Reusable React.js and Vue.js starter kits for rapid, production-ready project scaffolding.",
+      "longDescription": "Authored reusable React.js and Vue.js boilerplates that bundle modern frontend architecture out of the box — routing, state management, linting, and typed configuration — reducing initial project setup time by approximately 40%.",
+      "features": [
+        "Preconfigured routing and state management",
+        "TypeScript, Vite, and ESLint set up from the start",
+        "Opinionated, scalable folder structure",
+        "Publicly available on GitHub for the community"
+      ],
+      "link": "https://github.com/muddusarZulfiqar"
+    },
+    {
+      "title": "Hello Custom",
+      "category": "Web Experience",
+      "impact": "Custom Frontend Build",
+      "tags": ["React.js", "JavaScript", "SCSS", "Responsive UI"],
+      "description": "A polished, brand-focused web experience built with a clean, fully responsive frontend.",
+      "longDescription": "Delivered the frontend for Hello Custom, translating design into a pixel-perfect, responsive interface with smooth interactions and consistent cross-device behavior. Focused on maintainable component structure, fast rendering, and an experience that feels effortless on both desktop and mobile.",
+      "features": [
+        "Pixel-perfect, responsive UI across all screen sizes",
+        "Reusable, maintainable component architecture",
+        "Smooth interactions and cross-browser consistency",
+        "Performance-conscious markup and styling"
+      ],
+      "link": "https://hellocustom.io/"
+    },
+    {
+      "title": "TechOrix Company Site",
+      "category": "Corporate Website",
+      "impact": "Live Marketing Site",
+      "tags": ["Next.js", "React.js", "SEO", "Responsive UI"],
+      "description": "Fast, SEO-friendly corporate marketing site with a modern, responsive frontend.",
+      "longDescription": "Designed and built the company's public marketing site with Next.js and React.js, prioritizing performance, SEO, and cross-browser consistency. Delivered a clean, modern interface that loads fast and presents the brand clearly across every device.",
+      "features": [
+        "Server-rendered Next.js pages tuned for SEO",
+        "Fast load times and strong Core Web Vitals",
+        "Fully responsive, mobile-first layout",
+        "Accessible, semantic markup"
+      ],
+      "link": "https://techorix-website-nextjs.vercel.app/"
+    },
+    {
+      "title": "Zain Annual Report 2020",
+      "category": "Interactive Report",
+      "impact": "Digital Report Experience",
+      "tags": ["JavaScript", "Responsive UI", "Frontend", "Cross-Browser"],
+      "description": "An interactive digital annual report presenting corporate highlights in an engaging, responsive format.",
+      "longDescription": "Built the frontend for Zain's 2020 digital annual report, turning dense corporate and financial content into a clear, engaging, and easy-to-navigate web experience. Emphasized clean typography, smooth section transitions, and consistent rendering across browsers and devices.",
+      "features": [
+        "Engaging, navigable presentation of report content",
+        "Responsive layout optimized for reading on any device",
+        "Smooth section transitions and clean typography",
+        "Consistent cross-browser rendering"
+      ],
+      "link": "https://zain.com/AR2020/en/"
+    },
+    {
+      "title": "Zain Website — Kuwait",
+      "category": "Corporate Website",
+      "impact": "Live Telecom Site",
+      "tags": ["React.js", "JavaScript", "Responsive UI", "Cross-Browser"],
+      "description": "Responsive, cross-browser frontend for a major telecom's corporate web presence.",
+      "longDescription": "Developed responsive frontend interfaces for Zain's Kuwait corporate website, delivering a consistent, high-quality experience across a large, multi-section site. Focused on responsive layouts, cross-browser reliability, and clean, maintainable UI code at scale.",
+      "features": [
+        "Responsive, multi-section corporate layouts",
+        "Reliable cross-browser and cross-device behavior",
+        "Maintainable, scalable UI code",
+        "Performance-minded, accessible components"
+      ],
+      "link": "https://www.zain.com/"
+    }
+  ],
+  "certifications": [
+    "JavaScript",
+    "JavaScript (Intermediate) Certificate",
+    "Problem Solving (Basic) Certificate"
+  ],
+  "education": {
+    "degree": "BS, Computer Science",
+    "institution": "Virtual University of Pakistan",
+    "period": "2018 – 2022"
+  },
+  "languages": [
+    { "name": "Urdu", "level": "Native" },
+    { "name": "English", "level": "Fluent" }
+  ]
+}

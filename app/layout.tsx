@@ -1,0 +1,156 @@
+import type { Metadata } from 'next';
+import { Inter, JetBrains_Mono, Playfair_Display, Space_Grotesk } from 'next/font/google';
+import './globals.css';
+import portfolioData from '@/data/portfolio.json';
+import { ThemeProvider } from '@/components/ThemeProvider';
+import ThemeSwitcher from '@/components/ThemeSwitcher';
+import Navbar from '@/components/Navbar';
+
+const inter = Inter({ subsets: ['latin'], variable: '--font-inter' });
+const jetbrainsMono = JetBrains_Mono({ subsets: ['latin'], variable: '--font-mono' });
+const playfair = Playfair_Display({ subsets: ['latin'], variable: '--font-playfair' });
+const spaceGrotesk = Space_Grotesk({ subsets: ['latin'], variable: '--font-space' });
+
+const { profile, skills } = portfolioData;
+
+// Normalize the site URL (portfolio.json stores it without a protocol)
+const siteUrl = `https://${profile.website.replace(/^https?:\/\//, '')}`;
+
+// Build keyword list from the profile's real stack + skills, plus common search terms
+const keywords = Array.from(
+  new Set([
+    profile.name,
+    profile.title,
+    ...(profile.stack ?? []),
+    ...skills.flatMap((s) => s.items),
+    'Frontend Engineer',
+    'Senior Frontend Engineer',
+    'React Developer',
+    'Next.js Developer',
+    'Vue.js Developer',
+    'TypeScript Developer',
+    'Remote Frontend Engineer',
+    'Full-Stack Engineer',
+    'Web Developer',
+    'Lahore',
+    'Pakistan',
+  ])
+);
+
+export const metadata: Metadata = {
+  metadataBase: new URL(siteUrl),
+  title: {
+    default: `${profile.name} — ${profile.title}`,
+    template: `%s | ${profile.name}`,
+  },
+  description: profile.summary,
+  keywords,
+  authors: [{ name: profile.name, url: siteUrl }],
+  creator: profile.name,
+  publisher: profile.name,
+  applicationName: `${profile.name} — Portfolio`,
+  category: 'technology',
+  alternates: {
+    canonical: siteUrl,
+  },
+  openGraph: {
+    type: 'website',
+    url: siteUrl,
+    siteName: `${profile.name} — Portfolio`,
+    title: `${profile.name} — ${profile.title}`,
+    description: profile.tagline ?? profile.summary,
+    locale: 'en_US',
+    images: [
+      {
+        url: '/og-image.png',
+        width: 1200,
+        height: 630,
+        alt: `${profile.name} — ${profile.title}`,
+      },
+    ],
+  },
+  twitter: {
+    card: 'summary_large_image',
+    title: `${profile.name} — ${profile.title}`,
+    description: profile.tagline ?? profile.summary,
+    images: ['/og-image.png'],
+  },
+  robots: {
+    index: true,
+    follow: true,
+    googleBot: {
+      index: true,
+      follow: true,
+      'max-image-preview': 'large',
+      'max-snippet': -1,
+      'max-video-preview': -1,
+    },
+  },
+  icons: {
+    icon: [
+      { url: '/favicon.ico', sizes: 'any' },
+      { url: '/favicon-16x16.png', type: 'image/png', sizes: '16x16' },
+      { url: '/favicon-32x32.png', type: 'image/png', sizes: '32x32' },
+    ],
+    shortcut: '/favicon.ico',
+    apple: '/apple-touch-icon.png',
+  },
+  // After you set up Google Search Console, paste your verification code here:
+  // verification: { google: 'your-google-site-verification-code' },
+};
+
+export default function RootLayout({ children }: { children: React.ReactNode }) {
+  const { theme } = portfolioData;
+
+  const themeStyles = {
+    '--primary': theme.primary,
+    '--accent': theme.accent,
+    '--highlight': theme.highlight,
+    '--background': theme.background,
+    '--text': theme.text,
+  } as React.CSSProperties;
+
+  // Structured data (Schema.org Person) — helps search engines identify you
+  const jsonLd = {
+    '@context': 'https://schema.org',
+    '@type': 'Person',
+    name: profile.name,
+    jobTitle: profile.title,
+    description: profile.summary,
+    url: siteUrl,
+    email: `mailto:${profile.email}`,
+    image: `${siteUrl}/og-image.png`,
+    knowsAbout: [...(profile.stack ?? []), ...skills.flatMap((s) => s.items)],
+    sameAs: [profile.github, profile.linkedin].filter(Boolean),
+    address: {
+      '@type': 'PostalAddress',
+      addressLocality: 'Lahore',
+      addressRegion: 'Punjab',
+      addressCountry: 'PK',
+    },
+  };
+
+  return (
+    <html
+      lang="en"
+      className={`${inter.variable} ${jetbrainsMono.variable} ${playfair.variable} ${spaceGrotesk.variable}`}
+    >
+      <body className="font-sans antialiased relative" style={themeStyles} suppressHydrationWarning>
+        {/* Person structured data for SEO */}
+        <script
+          type="application/ld+json"
+          dangerouslySetInnerHTML={{ __html: JSON.stringify(jsonLd) }}
+        />
+
+        {/* Noise Grain Overlay */}
+        <div className="fixed inset-0 pointer-events-none z-[9999] opacity-[0.03] mix-blend-overlay bg-[url('https://grainy-gradients.vercel.app/noise.svg')]" />
+
+        <ThemeProvider initialTheme={theme as any}>
+          <Navbar />
+          {children}
+          <ThemeSwitcher />
+        </ThemeProvider>
+      </body>
+    </html>
+  );
+}
