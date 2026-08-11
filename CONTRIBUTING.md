@@ -12,7 +12,7 @@ I welcome high-quality feature contributions. If you have an idea that enhances 
 ### 💻 Quick Setup for Contributions
 
 ```bash
-git clone https://github.com/MuddusarZulfiqar/marrydev.git
+git clone https://github.com/MuddusarZulfiqar/Resume.git
 ```
 ```bash
 cd resume-site
