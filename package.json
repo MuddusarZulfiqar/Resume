@@ -6,7 +6,7 @@
   "author": "Muddusar Zulfiqar",
   "repository": {
     "type": "git",
-    "url": "https://github.com/Muddusartufail/portfolio.git"
+    "url": "https://github.com/MuddusarZulfiqar/portfolio.git"
   },
   "scripts": {
     "dev": "next dev",

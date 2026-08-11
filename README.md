@@ -24,7 +24,7 @@ Get the project up and running in a few minutes.
 ### 1. Clone the Repository
 
 ```bash
-git clone https://github.com/Muddusartufail/portfolio.git
+git clone https://github.com/MuddusarZulfiqar/portfolio.git
 cd portfolio
 ```
 
