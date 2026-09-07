@@ -3,9 +3,12 @@
 import Hero from '@/components/Hero';
 import Link from 'next/link';
 import { motion } from 'motion/react';
-import { Briefcase, Cpu, FolderGit2, ArrowRight } from 'lucide-react';
-import JobMatchFilter from '@/components/JobMatchFilter';
+import { Briefcase, Cpu, FolderGit2, FlaskConical, ArrowRight } from 'lucide-react';
+import AiTerminal from '@/components/AiTerminal';
 import Contact from '@/components/Contact';
+import About from '@/components/About';
+import Testimonials from '@/components/Testimonials';
+import Credentials from '@/components/Credentials';
 
 export default function PortfolioPage() {
   const portals = [
@@ -32,6 +35,14 @@ export default function PortfolioPage() {
       icon: FolderGit2,
       color: 'text-purple-500 bg-purple-500/5 border-purple-500/10',
       badge: 'iScanner · ChatOn · ipyramids'
+    },
+    {
+      href: '/playground',
+      title: 'Playground',
+      desc: 'Hands-on demos: responsive layout, a themeable token system, accessibility, and live Core Web Vitals.',
+      icon: FlaskConical,
+      color: 'text-highlight bg-highlight/5 border-highlight/10',
+      badge: 'Live demos'
     }
   ];
 
@@ -39,7 +50,10 @@ export default function PortfolioPage() {
     <main className="relative">
       {/* Hero Section */}
       <Hero />
-      
+
+      {/* About Section */}
+      <About />
+
       {/* Visual Portals Grid */}
       <section className="px-6 py-20 lg:px-24 bg-zinc-50/50 relative border-b border-zinc-100">
         <div className="absolute inset-0 -z-10 bg-[linear-gradient(to_right,#80808003_1px,transparent_1px),linear-gradient(to_bottom,#80808003_1px,transparent_1px)] bg-[size:16px_16px]" />
@@ -54,7 +68,7 @@ export default function PortfolioPage() {
             </p>
           </div>
 
-          <div className="grid grid-cols-1 md:grid-cols-3 gap-6">
+          <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-4 gap-6">
             {portals.map((portal, idx) => (
               <motion.div
                 key={portal.href}
@@ -97,13 +111,19 @@ export default function PortfolioPage() {
         </div>
       </section>
 
+      {/* Recommendations */}
+      <Testimonials />
+
+      {/* Education, Certifications & Languages */}
+      <Credentials />
+
       {/* Contact Section */}
       <div id="contact">
         <Contact />
       </div>
 
-      {/* Floating AI Filter Widget */}
-      <JobMatchFilter />
+      {/* Floating AI terminal */}
+      <AiTerminal />
     </main>
   );
 }

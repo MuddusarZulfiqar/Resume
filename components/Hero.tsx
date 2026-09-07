@@ -2,8 +2,9 @@
 
 import { motion, AnimatePresence } from 'motion/react';
 import { useState } from 'react';
-import { Github, Linkedin, ArrowRight, Code2, TrendingUp, Layers, Check, Download } from 'lucide-react';
+import { Github, Linkedin, ArrowRight, Code2, TrendingUp, Layers, Check } from 'lucide-react';
 import portfolioData from '@/data/portfolio.json';
+import ResumeModal from '@/components/ResumeModal';
 
 export default function Hero() {
   const { profile } = portfolioData;
@@ -70,26 +71,23 @@ export default function Hero() {
                 <ArrowRight className="w-4 h-4 group-hover:translate-x-1 transition-transform duration-300" />
               </a>
 
-              <a
-                href={profile.resumeUrl}
-                download
-                className="group flex items-center gap-2 px-7 py-3.5 border border-zinc-200 rounded-full hover:bg-zinc-50 hover:border-zinc-300 hover:text-primary transition-all duration-300 text-sm md:text-base font-medium text-zinc-600 shadow-sm"
-              >
-                Download Resume
-                <Download className="w-4 h-4 group-hover:translate-y-0.5 transition-transform duration-300" />
-              </a>
+              <ResumeModal />
 
               <div className="flex items-center gap-3">
-                <a 
-                  href={profile.github} 
-                  target="_blank" 
+                <a
+                  href={profile.github}
+                  target="_blank"
+                  rel="noreferrer"
+                  aria-label="GitHub profile"
                   className="p-3.5 border border-zinc-200 rounded-full hover:bg-zinc-50 hover:border-zinc-300 hover:text-primary transition-all duration-300 flex items-center justify-center text-zinc-600 shadow-sm"
                 >
                   <Github className="w-5 h-5" />
                 </a>
-                <a 
-                  href={profile.linkedin} 
-                  target="_blank" 
+                <a
+                  href={profile.linkedin}
+                  target="_blank"
+                  rel="noreferrer"
+                  aria-label="LinkedIn profile"
                   className="p-3.5 border border-zinc-200 rounded-full hover:bg-zinc-50 hover:border-zinc-300 hover:text-primary transition-all duration-300 flex items-center justify-center text-zinc-600 shadow-sm"
                 >
                   <Linkedin className="w-5 h-5" />
@@ -176,7 +174,7 @@ export default function Hero() {
                       <div className="flex gap-4">
                         <span className="w-4 text-zinc-600 text-right select-none">3</span>
                         <span>
-                          <span className="text-zinc-500 italic">// Optimized for 300K+ learners</span>
+                          <span className="text-zinc-500 italic">{'// Optimized for 300K+ learners'}</span>
                         </span>
                       </div>
                       <div className="flex gap-4">
@@ -214,7 +212,7 @@ export default function Hero() {
                         <span className="w-4 text-zinc-600 text-right select-none">7</span>
                         <span>
                           {"  "}
-                          <span className="text-zinc-500 italic">// 48% speed increase achieved via smart lazy loading</span>
+                          <span className="text-zinc-500 italic">{'// 48% speed increase achieved via smart lazy loading'}</span>
                         </span>
                       </div>
                       <div className="flex gap-4">

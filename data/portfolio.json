@@ -4,7 +4,7 @@
     "lastName": "Zulfiqar",
     "title": "Senior Software Engineer",
     "tagline": "Building fast, accessible, and scalable web apps with React, Next.js & TypeScript",
-    "stack": ["React.js", "Next.js", "Vue.js", "Nuxt.js", "TypeScript", "JavaScript"],
+    "stack": ["React.js", "Next.js", "Vue.js", "Nuxt.js", "TypeScript", "JavaScript", "Nodejs", "Express.js", "MongoDB", "Python", "AI/ML Integration"],
     "email": "muddusarzulfiqar@gmail.com",
     "phone": "+92 (346) 6281954",
     "website": "https://resume-muddusar.vercel.app/",
@@ -299,10 +299,113 @@
       "link": "https://www.zain.com/"
     }
   ],
+  "github": {
+    "username": "MuddusarZulfiqar",
+    "url": "https://github.com/MuddusarZulfiqar",
+    "memberSince": "2020",
+    "publicRepos": 33,
+    "blurb": "Starter kits, 3D/WebXR experiments, and full-stack demos — most of my public work is tooling that speeds other people's projects up.",
+    "repos": [
+      {
+        "name": "react-boilerplate",
+        "description": "Production-ready React starter with routing, state management, linting, and typed config baked in.",
+        "url": "https://github.com/MuddusarZulfiqar/react-boilerplate",
+        "language": "JavaScript",
+        "stars": 13,
+        "forks": 2,
+        "demo": ""
+      },
+      {
+        "name": "vue-boilerplate",
+        "description": "Opinionated Vue 3 + SCSS starter with a scalable folder structure and sensible defaults.",
+        "url": "https://github.com/MuddusarZulfiqar/vue-boilerplate",
+        "language": "SCSS",
+        "stars": 0,
+        "forks": 0,
+        "demo": ""
+      },
+      {
+        "name": "AR-Product-Viewer",
+        "description": "In-browser augmented-reality product viewer built with TypeScript and WebXR.",
+        "url": "https://github.com/MuddusarZulfiqar/AR-Product-Viewer",
+        "language": "TypeScript",
+        "stars": 0,
+        "forks": 0,
+        "demo": "https://ar-product-viewer-two.vercel.app"
+      },
+      {
+        "name": "THREEJS-Solar-System",
+        "description": "Interactive 3D solar system with orbit controls and animated planets, built on Three.js.",
+        "url": "https://github.com/MuddusarZulfiqar/THREEJS-Solar-System",
+        "language": "JavaScript",
+        "stars": 0,
+        "forks": 0,
+        "demo": ""
+      },
+      {
+        "name": "NodeJs-Ecommerce-Store",
+        "description": "Full-stack e-commerce store on the MERN stack with cart, auth, and checkout flows.",
+        "url": "https://github.com/MuddusarZulfiqar/NodeJs-Ecommerce-Store",
+        "language": "JavaScript",
+        "stars": 0,
+        "forks": 0,
+        "demo": "https://node-js-ecommerce-store.vercel.app"
+      },
+      {
+        "name": "Shopify-App-Extension-Boilerplate",
+        "description": "Starter template for building Shopify app extensions with a clean project setup.",
+        "url": "https://github.com/MuddusarZulfiqar/Shopify-App-Extention-Boilerplate",
+        "language": "JavaScript",
+        "stars": 0,
+        "forks": 0,
+        "demo": ""
+      }
+    ]
+  },
+  "testimonials": [
+    {
+      "name": "Stephen Chin",
+      "title": "Founder, HelloCustom",
+      "relation": "Client",
+      "date": "Aug 2023",
+      "quote": "Muddusar is a rockstar frontend web developer! His work quality, attention to detail, and ability to meet deadlines is second to none. He has been a true asset to our team and project."
+    },
+    {
+      "name": "Muhammad Faizan Rauf",
+      "title": "Senior Software Engineer, PureLogics",
+      "relation": "Worked on the same team",
+      "date": "Oct 2023",
+      "quote": "He has worked with me directly. He has a tendency to learn and grow, and a passion to keep himself updated with the latest standards, tips and evolving technologies. Muddusar knows well the requirements for building an application from scratch, keeping time and other constraints in mind. His positivity and fresh knowledge have been very beneficial for his co-workers."
+    },
+    {
+      "name": "Zain Ul Abideen",
+      "title": "IT Delivery Manager, TechOrix",
+      "relation": "Managed Muddusar directly",
+      "date": "Oct 2023",
+      "quote": "I had the pleasure of leading Muddusar during his tenure at TechOrix. He is an exceptional front-end developer with a sharp eye for design and a mastery of coding languages. He consistently delivered outstanding results, bringing creativity and technical expertise to our projects — and he is a reliable, collaborative team player. I highly recommend him for any front-end development role."
+    },
+    {
+      "name": "Syed Ali Ahmed",
+      "title": "Software Engineer, PureLogics",
+      "relation": "Worked on the same team",
+      "date": "Jul 2025",
+      "quote": "Muddusar is an exceptional frontend developer with strong expertise in React. He builds clean, efficient, and user-friendly interfaces with great attention to detail. His understanding of modern frontend tools and performance optimization is impressive. Reliable, fast-learning, and passionate — a valuable asset to any development team. Highly recommended!"
+    },
+    {
+      "name": "Junaid Hassan",
+      "title": "Senior Full-Stack Developer, PureLogics",
+      "relation": "Worked on the same team",
+      "date": "Oct 2023",
+      "quote": "I had the privilege of working closely with Muddusar at PureLogics for over a year and a half, and I can confidently say that he is a true powerhouse of talent and enthusiasm in web frontend technologies. His energy and passion are infectious; no challenge ever seemed too daunting. One of his standout qualities is exceptional time management — in a fast-paced industry, his ability to stay organized and consistently meet deadlines was a tremendous asset. He is always eager to learn and adapt to new technologies and trends. I wholeheartedly recommend him to anyone seeking a dedicated, talented, and results-driven frontend professional."
+    }
+  ],
   "certifications": [
     "JavaScript",
     "JavaScript (Intermediate) Certificate",
-    "Problem Solving (Basic) Certificate"
+    "Problem Solving (Basic) Certificate",
+    "Claude 101",
+    "Claude Code 101",
+    "Claude Platform 101"
   ],
   "education": {
     "degree": "BS, Computer Science",

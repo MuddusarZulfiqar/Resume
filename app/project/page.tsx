@@ -8,6 +8,7 @@ import {
   Activity, Code2, Rocket, Layers, Building2, Globe, FileText, Palette,
 } from 'lucide-react';
 import portfolioData from '@/data/portfolio.json';
+import OpenSource from '@/components/OpenSource';
 
 // A curated set of distinct, high-end gradient + icon themes.
 // Cycled by card index so every project gets its own attractive, non-repeating look
@@ -122,6 +123,9 @@ export default function ProjectsPage() {
             );
           })}
         </div>
+
+        {/* Open-source repositories */}
+        <OpenSource />
 
         {/* Project Detail Modal */}
         <AnimatePresence>

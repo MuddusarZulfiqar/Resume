@@ -13,7 +13,8 @@ export default function Navbar() {
     { href: '/', label: 'Home' },
     { href: '/experience', label: 'Experience' },
     { href: '/skills', label: 'Skills' },
-    { href: '/project', label: 'Projects' }
+    { href: '/project', label: 'Projects' },
+    { href: '/playground', label: 'Playground' }
   ];
 
   return (
