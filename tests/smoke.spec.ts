@@ -71,6 +71,26 @@ test('AI terminal opens, shows suggestions, and answers', async ({ page }) => {
   await expect(page.locator('pre').last()).not.toBeEmpty({ timeout: 15000 });
 });
 
+test('mobile navbar collapses into a working menu', async ({ page }) => {
+  await page.setViewportSize({ width: 375, height: 800 });
+  await page.goto('/');
+
+  // The inline desktop link row must not be visible at this width.
+  const inlineProjects = page.locator('nav >> text=Projects').first();
+  await expect(inlineProjects).toBeHidden();
+
+  await page.getByRole('button', { name: 'Menu' }).click();
+  // Inside <nav> two "Playground" links exist (hidden desktop row + dropdown);
+  // the visible one is the dropdown.
+  const menuLink = page
+    .locator('nav')
+    .getByRole('link', { name: 'Playground' })
+    .last();
+  await expect(menuLink).toBeVisible();
+  await menuLink.click();
+  await expect(page).toHaveURL(/\/playground$/);
+});
+
 test('sitemap and robots are served', async ({ request }) => {
   const sitemap = await request.get('/sitemap.xml');
   expect(sitemap.ok()).toBeTruthy();
