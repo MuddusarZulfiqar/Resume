@@ -16,6 +16,7 @@ import {
   Cpu,
   FolderGit2,
   FlaskConical,
+  BookOpen,
   User,
   Quote,
   GraduationCap,
@@ -87,6 +88,7 @@ export default function CommandPalette() {
       { id: 'experience', label: 'Go to Experience', group: 'Navigate', icon: Briefcase, run: () => go('/experience') },
       { id: 'skills', label: 'Go to Skills', group: 'Navigate', icon: Cpu, run: () => go('/skills') },
       { id: 'projects', label: 'Go to Projects', group: 'Navigate', icon: FolderGit2, run: () => go('/project') },
+      { id: 'blog', label: 'Go to Blog', group: 'Navigate', icon: BookOpen, keywords: 'writing rag jwt session cicd how it works', run: () => go('/blog') },
       { id: 'playground', label: 'Go to Playground', group: 'Navigate', icon: FlaskConical, keywords: 'responsive theme accessibility performance', run: () => go('/playground') },
 
       { id: 'about', label: 'Jump to About', group: 'Sections', icon: User, run: () => jump('about') },

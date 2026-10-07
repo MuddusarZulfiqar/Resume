@@ -2,9 +2,9 @@
   "profile": {
     "name": "Muddusar Zulfiqar",
     "lastName": "Zulfiqar",
-    "title": "Senior Software Engineer",
-    "tagline": "Building fast, accessible, and scalable web apps with React, Next.js & TypeScript",
-    "stack": ["React.js", "Next.js", "Vue.js", "Nuxt.js", "TypeScript", "JavaScript", "Nodejs", "Express.js", "MongoDB", "Python", "AI/ML Integration"],
+    "title": "Senior Full-Stack Engineer — AI & DevOps",
+    "tagline": "Building full-stack products, AI-powered features, and the DevOps pipelines that ship them",
+    "stack": ["React.js", "Next.js", "Node.js", "TypeScript", "Claude API / MCP", "AI Agents", "Docker", "AWS", "CI/CD", "PostgreSQL", "MongoDB", "Python"],
     "email": "muddusarzulfiqar@gmail.com",
     "phone": "+92 (346) 6281954",
     "website": "https://resume-muddusar.vercel.app/",
@@ -12,7 +12,7 @@
     "linkedin": "https://www.linkedin.com/in/muddusar-zulfiqar/",
     "resumeUrl": "/Muddusar_Zulfiqar_Resume.pdf",
     "location": "Pakistan · Open to Remote · On-Site",
-    "summary": "Senior Software Engineer with 7+ years building fast, accessible, and scalable web applications for international clients and distributed teams. Specialized in React, Next.js, Vue.js, Nuxt.js, and TypeScript, with strong full-stack depth across the MERN and MEVN stacks — Node.js, Express.js, and MongoDB — plus hands-on experience integrating AI/ML features using Python and modern AI APIs. Currently a Senior Software Engineer and frontend lead at PureLogics, mentoring a team of 15 engineers and owning delivery from architecture through launch in remote-first, cross-functional environments.",
+    "summary": "Senior Full-Stack Engineer with 7+ years building fast, scalable web applications end to end — from React/Next.js and Vue/Nuxt frontends through Node.js/Express APIs and MongoDB/PostgreSQL data layers — for international clients and distributed teams. Integrates the Anthropic Claude API and Model Context Protocol (MCP) into production apps, building LLM-powered features with RAG and multi-agent AI workflows, including Claude Code subagent orchestration where specialized agents hand off work as a coordinated team. Owns the DevOps side of delivery too: Docker, CI/CD pipelines, and AWS deployments. Currently a Senior Software Engineer and frontend lead at PureLogics, mentoring a team of 15 engineers and owning delivery from architecture through launch in remote-first, cross-functional environments.",
     "yearsOfExp": "7+",
     "engineersMentored": "15",
     "perfIncrease": "30%",
@@ -38,93 +38,41 @@
     },
     {
       "category": "Backend & APIs",
-      "items": ["Node.js", "Express.js", "NestJS", "MongoDB", "REST APIs", "MERN Stack", "MEVN Stack"]
+      "items": ["Node.js", "Express.js", "NestJS", "REST APIs", "GraphQL", "MongoDB", "PostgreSQL", "Prisma ORM", "MERN Stack", "MEVN Stack"]
     },
     {
       "category": "AI/ML & Data",
-      "items": ["Python", "AI/ML Integration", "AI APIs / LLM Integration", "Data Science (Fundamentals)"]
+      "items": ["Anthropic Claude API", "Model Context Protocol (MCP)", "AI Agents / Multi-Agent Workflows", "Claude Code (Subagent Orchestration)", "RAG", "LLM API Integration", "Python", "Generative AI"]
     },
     {
       "category": "Tooling & DevOps",
-      "items": ["Git / GitHub", "Vite", "Webpack", "Babel", "Docker", "AWS", "CI/CD", "Linux"]
+      "items": ["Docker", "AWS", "CI/CD (GitHub Actions)", "Linux", "Git / GitHub", "Vite", "Webpack", "Jest / Playwright"]
     }
   ],
   "experience": [
     {
       "company": "PureLogics",
       "role": "Senior Software Engineer — Frontend Lead",
-      "period": "Jul 2022 – Present",
+      "period": "Oct 2023 – Present",
       "location": "Remote · Lahore, Pakistan",
       "description": [
-        "Progressed from Software Engineer to Senior Software Engineer, leading frontend development across multiple scalable web applications for international clients.",
+        "Integrate LLM APIs (Anthropic Claude) and MCP tooling into production workflows, building LLM-powered features with RAG and multi-agent AI workflows on the Node.js / React stack.",
+        "Run Claude Code subagent workflows in day-to-day delivery — splitting feature work across specialized agents that hand off research, implementation, and review as a coordinated team, cutting iteration time on complex features.",
         "Mentor and provide technical guidance to a team of 15 engineers, raising team-wide code quality and delivery through code reviews, pair programming, and hands-on coaching.",
-        "Architected responsive interfaces in React.js, Vue.js, and SCSS, improving Lighthouse performance scores by 25% and reducing page load times by 30% via code splitting, lazy loading, and reusable component architecture.",
-        "Contribute to architectural and strategic decisions across TypeScript, Node.js, Express.js, and MongoDB, aligning technical solutions with broader business objectives.",
+        "Architect responsive interfaces in React.js, Vue.js, and SCSS, improving Lighthouse performance scores by 25% and reducing page load times by 30% via code splitting, lazy loading, and reusable component architecture.",
+        "Own full-stack and DevOps delivery — REST/GraphQL APIs in Node.js/Express with PostgreSQL and MongoDB, containerized with Docker, deployed via CI/CD pipelines to AWS.",
         "Collaborate asynchronously with cross-functional, distributed teams to ship features on schedule in a remote-first environment."
       ]
     },
-    {
-      "company": "TechOrix",
-      "role": "Frontend Web Developer",
-      "period": "Feb 2022 – Jul 2022",
-      "location": "Lahore, Pakistan",
-      "description": [
-        "Built responsive, high-performance web applications in React.js and Next.js, delivering consistent experiences across devices.",
-        "Implemented accessible, multilingual interfaces with strong attention to UI/UX and performance optimization.",
-        "Partnered with cross-functional teams to ship goal-aligned frontend solutions and adopt modern workflows."
-      ]
-    },
-    {
-      "company": "Upwork",
-      "role": "Freelance Frontend Developer",
-      "period": "Oct 2021 – Jan 2022",
-      "location": "Remote",
-      "description": [
-        "Delivered frontend development for international clients across 20 projects, building responsive interfaces to high code-quality standards.",
-        "Translated client requirements into clean, maintainable React and JavaScript components under tight timelines."
-      ]
-    },
-    {
-      "company": "LogicsDrive",
-      "role": "Frontend Developer",
-      "period": "Jul 2020 – Sep 2021",
-      "location": "Lahore, Pakistan",
-      "description": [
-        "Developed visually polished, responsive user interfaces with React.js, Vue.js, jQuery, and SCSS, maintaining high code-quality standards.",
-        "Stayed current with modern tools and techniques to continuously improve delivery quality and consistency."
-      ]
-    },
-    {
-      "company": "Tetralogicx",
-      "role": "Frontend Developer",
-      "period": "Feb 2020 – Jul 2020",
-      "location": "Lahore, Pakistan",
-      "description": [
-        "Built responsive, scalable interfaces with JavaScript, jQuery, and Liquid that integrated cleanly with backend systems."
-      ]
-    },
-    {
-      "company": "NexTash",
-      "role": "Web Development Intern",
-      "period": "Sep 2019 – Feb 2020",
-      "location": "Lahore, Pakistan",
-      "description": [
-        "Contributed to website development and company-profile management, strengthening core web development and communication skills."
-      ]
-    }
-  ],
-    "experience": [
     {
       "company": "PureLogics",
-      "role": "Senior Software Engineer — Frontend Lead",
-      "period": "Jul 2022 – Present",
-      "location": "Remote · Lahore, Pakistan",
+      "role": "Software Engineer",
+      "period": "Jul 2022 – Oct 2023",
+      "location": "Lahore, Pakistan",
       "description": [
         "Progressed from Software Engineer to Senior Software Engineer, leading frontend development across multiple scalable web applications for international clients.",
-        "Mentor and provide technical guidance to a team of 15 engineers, raising team-wide code quality and delivery through code reviews, pair programming, and hands-on coaching.",
-        "Architected responsive interfaces in React.js, Vue.js, and SCSS, improving Lighthouse performance scores by 25% and reducing page load times by 30% via code splitting, lazy loading, and reusable component architecture.",
-        "Contribute to architectural and strategic decisions across TypeScript, Node.js, Express.js, and MongoDB, aligning technical solutions with broader business objectives.",
-        "Collaborate asynchronously with cross-functional, distributed teams to ship features on schedule in a remote-first environment."
+        "Built responsive React.js, Vue.js, and SCSS interfaces across client projects; named \"Star of the Month\" before promotion to Senior in Oct 2023.",
+        "Contributed to architectural and strategic decisions across TypeScript, Node.js, Express.js, and MongoDB, aligning technical solutions with broader business objectives."
       ]
     },
     {
@@ -178,6 +126,20 @@
     }
   ],
   "projects": [
+    {
+      "title": "AI Agent Workflows at PureLogics",
+      "category": "AI / Developer Tooling",
+      "impact": "Multi-Agent Delivery",
+      "tags": ["Claude API", "MCP", "Claude Code", "AI Agents", "RAG", "Node.js"],
+      "description": "Production LLM features and a multi-agent delivery workflow built on the Anthropic Claude API and MCP.",
+      "longDescription": "Integrated the Anthropic Claude API and Model Context Protocol (MCP) into client-facing Node.js/React products to ship LLM-powered features backed by RAG. Alongside that, set up a Claude Code subagent workflow for the team: complex features get split across specialized agents — one researches and plans, another implements, another reviews — handing off work the way a small human team would, which shortened iteration time on multi-step features.",
+      "features": [
+        "Anthropic Claude API + MCP tooling integrated into production Node.js/React apps",
+        "RAG pipeline powering LLM-driven features on real product data",
+        "Claude Code subagent orchestration: specialized agents collaborate and hand off research, implementation, and review",
+        "Rolled the workflow out to the engineering team as part of day-to-day delivery"
+      ]
+    },
     {
       "title": "Sliced Health",
       "category": "Healthcare Analytics",

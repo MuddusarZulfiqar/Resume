@@ -3,7 +3,7 @@
 import Hero from '@/components/Hero';
 import Link from 'next/link';
 import { motion } from 'motion/react';
-import { Briefcase, Cpu, FolderGit2, FlaskConical, ArrowRight } from 'lucide-react';
+import { Briefcase, Cpu, FolderGit2, FlaskConical, BookOpen, ArrowRight } from 'lucide-react';
 import AiTerminal from '@/components/AiTerminal';
 import Contact from '@/components/Contact';
 import About from '@/components/About';
@@ -43,6 +43,14 @@ export default function PortfolioPage() {
       icon: FlaskConical,
       color: 'text-highlight bg-highlight/5 border-highlight/10',
       badge: 'Live demos'
+    },
+    {
+      href: '/blog',
+      title: 'How Things Work',
+      desc: 'Animated, beginner-friendly breakdowns of RAG, JWT, sessions, and CI/CD — real request flows, step by step.',
+      icon: BookOpen,
+      color: 'text-rose-500 bg-rose-500/5 border-rose-500/10',
+      badge: 'RAG · JWT · CI/CD'
     }
   ];
 
@@ -68,7 +76,7 @@ export default function PortfolioPage() {
             </p>
           </div>
 
-          <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-4 gap-6">
+          <div className="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-3 xl:grid-cols-5 gap-6">
             {portals.map((portal, idx) => (
               <motion.div
                 key={portal.href}
