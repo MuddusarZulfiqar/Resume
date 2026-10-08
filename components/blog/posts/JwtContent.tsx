@@ -16,6 +16,7 @@ import {
   FileSignature,
   Save,
   BadgeCheck,
+  Zap,
 } from 'lucide-react';
 import BlogShell from '@/components/blog/BlogShell';
 import SequenceDiagram, { type SeqStep } from '@/components/blog/SequenceDiagram';
@@ -25,6 +26,7 @@ const MORE = [
   { href: '/blog/how-rag-works', title: 'How RAG Works', icon: BrainCog },
   { href: '/blog/how-sessions-work', title: 'How Sessions Work', icon: Cookie },
   { href: '/blog/how-cicd-works', title: 'How CI/CD Works', icon: GitBranch },
+  { href: '/blog/how-redis-caching-works', title: 'How Redis Caching Works', icon: Zap },
 ];
 
 const ACTORS = [

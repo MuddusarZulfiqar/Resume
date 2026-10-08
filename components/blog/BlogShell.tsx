@@ -81,7 +81,7 @@ export default function BlogShell({
           <span className="text-[10px] font-mono uppercase tracking-widest text-text/40 block mb-5">
             Keep reading
           </span>
-          <div className="grid grid-cols-1 sm:grid-cols-3 gap-3">
+          <div className="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-4 gap-3">
             {more.map((entry) => {
               const EntryIcon = entry.icon;
               return (

@@ -14,6 +14,8 @@ export default function sitemap(): MetadataRoute.Sitemap {
     '/blog/how-jwt-works',
     '/blog/how-sessions-work',
     '/blog/how-cicd-works',
+    '/blog/how-redis-caching-works',
+    '/blog/how-to-use-redis-in-nodejs',
   ];
 
   return [

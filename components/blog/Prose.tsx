@@ -1,6 +1,10 @@
-import type { ReactNode } from 'react';
+'use client';
+
+import { useState, type ReactNode } from 'react';
 import type { LucideIcon } from 'lucide-react';
-import { Lightbulb, AlertTriangle, Sparkles } from 'lucide-react';
+import { Lightbulb, AlertTriangle, Sparkles, Copy, Check } from 'lucide-react';
+import { Highlight } from 'prism-react-renderer';
+import { monokaiPro, inferLanguage } from './codeTheme';
 
 export function H2({ children, id }: { children: ReactNode; id?: string }) {
   return (
@@ -39,20 +43,85 @@ export function Code({ children }: { children: ReactNode }) {
   );
 }
 
-export function Pre({ children, filename }: { children: string; filename?: string }) {
+export function Pre({
+  children,
+  filename,
+  language,
+}: {
+  children: string;
+  filename?: string;
+  language?: string;
+}) {
+  const [copied, setCopied] = useState(false);
+  const code = children.replace(/\n$/, '');
+  const lang = language ?? inferLanguage(filename);
+
+  const handleCopy = async () => {
+    try {
+      await navigator.clipboard.writeText(code);
+      setCopied(true);
+      setTimeout(() => setCopied(false), 1800);
+    } catch {
+      // Clipboard API unavailable (e.g. insecure context) — fail silently.
+    }
+  };
+
   return (
-    <div className="not-prose rounded-2xl overflow-hidden border border-zinc-800 bg-zinc-950 my-7 shadow-sm">
-      {filename && (
-        <div className="flex items-center gap-1.5 px-4 py-2.5 border-b border-zinc-800">
-          <span className="w-2.5 h-2.5 rounded-full bg-[#ff5f56] block" />
-          <span className="w-2.5 h-2.5 rounded-full bg-[#ffbd2e] block" />
-          <span className="w-2.5 h-2.5 rounded-full bg-[#27c93f] block" />
-          <span className="ml-2.5 text-zinc-500 text-[10px] font-mono">{filename}</span>
-        </div>
-      )}
-      <pre className="p-4 md:p-5 overflow-x-auto text-[11px] md:text-[13px] leading-relaxed text-zinc-300 font-mono">
-        {children}
-      </pre>
+    <div
+      className="not-prose rounded-2xl overflow-hidden border border-black/40 my-7 shadow-sm"
+      style={{ backgroundColor: monokaiPro.plain.backgroundColor }}
+    >
+      <div className="flex items-center gap-1.5 px-4 py-2.5 border-b border-white/10">
+        <span className="w-2.5 h-2.5 rounded-full bg-[#ff5f56] block" />
+        <span className="w-2.5 h-2.5 rounded-full bg-[#ffbd2e] block" />
+        <span className="w-2.5 h-2.5 rounded-full bg-[#27c93f] block" />
+        {filename && (
+          <span className="ml-2.5 text-zinc-400 text-[10px] font-mono truncate">{filename}</span>
+        )}
+        <button
+          onClick={handleCopy}
+          aria-label="Copy code"
+          className="ml-auto inline-flex items-center gap-1.5 px-2.5 py-1 rounded-md text-[10px] font-mono uppercase tracking-wider text-zinc-400 hover:text-white hover:bg-white/10 transition-colors cursor-pointer shrink-0"
+        >
+          {copied ? (
+            <>
+              <Check className="w-3 h-3 text-emerald-400" />
+              <span className="text-emerald-400">Copied</span>
+            </>
+          ) : (
+            <>
+              <Copy className="w-3 h-3" />
+              Copy
+            </>
+          )}
+        </button>
+      </div>
+
+      <Highlight theme={monokaiPro} code={code} language={lang}>
+        {({ className, style, tokens, getLineProps, getTokenProps }) => (
+          <pre
+            className={`${className} p-4 md:p-5 overflow-x-auto text-[11px] md:text-[13px] leading-relaxed font-mono`}
+            style={style}
+          >
+            {tokens.map((line, i) => {
+              const { className: lineClassName, ...lineProps } = getLineProps({ line });
+              return (
+                <div key={i} className={`${lineClassName} table-row`} {...lineProps}>
+                  <span className="table-cell pr-4 text-right select-none opacity-30 w-[1%]">
+                    {i + 1}
+                  </span>
+                  <span className="table-cell">
+                    {line.map((token, key) => {
+                      const { className: tokenClassName, ...tokenProps } = getTokenProps({ token });
+                      return <span key={key} className={tokenClassName} {...tokenProps} />;
+                    })}
+                  </span>
+                </div>
+              );
+            })}
+          </pre>
+        )}
+      </Highlight>
     </div>
   );
 }

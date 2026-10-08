@@ -10,6 +10,8 @@ import {
   KeyRound,
   Cookie,
   GitBranch,
+  Zap,
+  Terminal,
   Clock,
   Search,
   X,
@@ -32,6 +34,32 @@ type Post = {
 };
 
 const POSTS: Post[] = [
+  {
+    href: '/blog/how-to-use-redis-in-nodejs',
+    title: 'How to Use Redis in a Node.js API',
+    excerpt:
+      'The cache-aside pattern actually wired into an Express route — connection, helper, invalidation, and the failure handling most tutorials skip.',
+    icon: Terminal,
+    category: 'Backend',
+    tags: ['Redis', 'Node.js', 'Express', 'ioredis'],
+    level: 'Beginner',
+    readTime: '9 min read',
+    readMinutes: 9,
+    theme: 'from-fuchsia-500/10 via-pink-500/5 to-purple-500/10 border-fuchsia-500/20 text-fuchsia-600',
+  },
+  {
+    href: '/blog/how-redis-caching-works',
+    title: 'How Redis Caching Works',
+    excerpt:
+      'Why the second request is always faster than the first — traced through an actual cache miss and an actual cache hit.',
+    icon: Zap,
+    category: 'Performance',
+    tags: ['Redis', 'Caching', 'TTL', 'In-Memory'],
+    level: 'Beginner',
+    readTime: '8 min read',
+    readMinutes: 8,
+    theme: 'from-cyan-500/10 via-sky-500/5 to-blue-500/10 border-cyan-500/20 text-cyan-600',
+  },
   {
     href: '/blog/how-rag-works',
     title: 'How RAG Actually Works',
