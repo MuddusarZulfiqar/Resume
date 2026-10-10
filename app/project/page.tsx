@@ -9,6 +9,7 @@ import {
 } from 'lucide-react';
 import portfolioData from '@/data/portfolio.json';
 import OpenSource from '@/components/OpenSource';
+import NpmPackages from '@/components/NpmPackages';
 
 // A curated set of distinct, high-end gradient + icon themes.
 // Cycled by card index so every project gets its own attractive, non-repeating look
@@ -123,6 +124,9 @@ export default function ProjectsPage() {
             );
           })}
         </div>
+
+        {/* Published npm packages */}
+        <NpmPackages />
 
         {/* Open-source repositories */}
         <OpenSource />

@@ -5,6 +5,7 @@ import { useState } from 'react';
 import { Github, Linkedin, ArrowRight, Code2, TrendingUp, Layers, Check } from 'lucide-react';
 import portfolioData from '@/data/portfolio.json';
 import ResumeModal from '@/components/ResumeModal';
+import { NpmWordLogo } from '@/components/icons/NpmLogo';
 
 export default function Hero() {
   const { profile } = portfolioData;
@@ -91,6 +92,15 @@ export default function Hero() {
                   className="p-3.5 border border-zinc-200 rounded-full hover:bg-zinc-50 hover:border-zinc-300 hover:text-primary transition-all duration-300 flex items-center justify-center text-zinc-600 shadow-sm"
                 >
                   <Linkedin className="w-5 h-5" />
+                </a>
+                <a
+                  href={profile.npm}
+                  target="_blank"
+                  rel="noreferrer"
+                  aria-label="npm profile"
+                  className="p-2.5 border border-zinc-200 rounded-full hover:bg-zinc-50 hover:border-[#CB3837]/30 transition-all duration-300 flex items-center justify-center shadow-sm"
+                >
+                  <NpmWordLogo className="w-7 h-7" />
                 </a>
               </div>
             </div>

@@ -10,6 +10,7 @@
     "website": "https://resume-muddusar.vercel.app/",
     "github": "https://github.com/MuddusarZulfiqar",
     "linkedin": "https://www.linkedin.com/in/muddusar-zulfiqar/",
+    "npm": "https://www.npmjs.com/~muddusarzulfiqar",
     "resumeUrl": "/Muddusar_Zulfiqar_Resume.pdf",
     "location": "Pakistan · Open to Remote · On-Site",
     "summary": "Senior Full-Stack Engineer with 7+ years building fast, scalable web applications end to end — from React/Next.js and Vue/Nuxt frontends through Node.js/Express APIs and MongoDB/PostgreSQL data layers — for international clients and distributed teams. Integrates the Anthropic Claude API and Model Context Protocol (MCP) into production apps, building LLM-powered features with RAG and multi-agent AI workflows, including Claude Code subagent orchestration where specialized agents hand off work as a coordinated team. Owns the DevOps side of delivery too: Docker, CI/CD pipelines, and AWS deployments. Currently a Senior Software Engineer and frontend lead at PureLogics, mentoring a team of 15 engineers and owning delivery from architecture through launch in remote-first, cross-functional environments.",
@@ -321,6 +322,68 @@
         "stars": 0,
         "forks": 0,
         "demo": ""
+      }
+    ]
+  },
+  "npmPackages": {
+    "name": "restmcp",
+    "tagline": "Turn an existing REST API into MCP tools automatically — no hand-written tool definitions.",
+    "repo": "https://github.com/MuddusarZulfiqar/restmcp",
+    "problem": "Making a REST API callable by AI agents like Claude over the Model Context Protocol normally means hand-writing a separate tool definition for every single endpoint — duplicating routes, request schemas, and validation that already exist in the app. It's tedious to write and it silently drifts out of sync the moment the API changes.",
+    "solution": "restmcp introspects an existing Express or NestJS app at startup, generates OpenAPI and JSON Schema straight from the real routes (reusing NestJS DTOs and class-validator decorators where available), and mounts a single POST /mcp endpoint — so any MCP-compatible AI client can call the API as tools with zero duplicate definitions to maintain.",
+    "packages": [
+      {
+        "name": "@restmcp/core",
+        "role": "Engine",
+        "version": "0.1.3",
+        "npmUrl": "https://www.npmjs.com/package/@restmcp/core",
+        "description": "Framework-agnostic pipeline: routes → OpenAPI → JSON Schema → MCP tools → MCP server. Framework adapters build on this directly; most users won't install it on its own.",
+        "features": [
+          "Route-to-OpenAPI conversion",
+          "JSON Schema generation with validation constraints",
+          "Deterministic tool naming with collision handling",
+          "Glob-based route filtering",
+          "API key / Bearer / OAuth2 auth strategies",
+          "Rate limiting & request-size controls"
+        ]
+      },
+      {
+        "name": "@restmcp/express",
+        "role": "Express adapter",
+        "version": "0.1.5",
+        "npmUrl": "https://www.npmjs.com/package/@restmcp/express",
+        "description": "Converts an Express app's routes into MCP tools and mounts POST /mcp.",
+        "features": [
+          "Route discovery via Express router-stack introspection",
+          "One-line MCPExpress.setup()",
+          "Per-route tool overrides & exclusions",
+          "Configurable auth, logging, and rate limiting"
+        ]
+      },
+      {
+        "name": "@restmcp/nestjs",
+        "role": "NestJS adapter",
+        "version": "0.1.3",
+        "npmUrl": "https://www.npmjs.com/package/@restmcp/nestjs",
+        "description": "Converts a Nest application's controllers into MCP tools and mounts POST /mcp.",
+        "features": [
+          "Drop-in MCPModule for the root module",
+          "Reuses existing DTOs & class-validator decorators",
+          "@McpExclude() / @McpTool() decorators",
+          "getTools() / getManifest() introspection"
+        ]
+      },
+      {
+        "name": "@muddusarzulfiqar/restmcp",
+        "role": "CLI",
+        "version": "0.1.3",
+        "npmUrl": "https://www.npmjs.com/package/@muddusarzulfiqar/restmcp",
+        "description": "Inspects, generates, and exports MCP tool definitions from an existing Express/NestJS app — without running the full server.",
+        "features": [
+          "init / inspect / generate / export commands",
+          "Reuses the app's real MCP instance, preserving customizations",
+          "Exports mcp-tools.json + OpenAPI 3 docs"
+        ]
       }
     ]
   },
