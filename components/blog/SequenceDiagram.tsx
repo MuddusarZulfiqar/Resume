@@ -8,7 +8,7 @@ import { ChevronRight, ChevronLeft, Settings2, Play, Pause } from 'lucide-react'
 export type SeqActor = { label: string; icon: LucideIcon };
 
 export type SeqStep =
-  | { kind: 'arrow'; from: number; to: number; label: string; detail: string; tone?: 'request' | 'response' }
+  | { kind: 'arrow'; from: number; to: number; label: string; detail: string; tone?: 'request' | 'response' | 'push' }
   | { kind: 'self'; actor: number; label: string; detail: string; icon?: LucideIcon };
 
 export default function SequenceDiagram({
@@ -169,14 +169,23 @@ function ArrowRow({
   to: number;
   cols: number;
   label: string;
-  tone?: 'request' | 'response';
+  tone?: 'request' | 'response' | 'push';
   status: 'past' | 'now' | 'future';
   onClick: () => void;
 }) {
   const left = Math.min(from, to);
   const right = Math.max(from, to);
   const pointsRight = to > from;
-  const color = status === 'now' ? (tone === 'response' ? 'var(--highlight)' : 'var(--primary)') : status === 'past' ? '#a1a1aa' : '#d4d4d8';
+  const color =
+    status === 'now'
+      ? tone === 'response'
+        ? 'var(--highlight)'
+        : tone === 'push'
+          ? 'var(--accent)'
+          : 'var(--primary)'
+      : status === 'past'
+        ? '#a1a1aa'
+        : '#d4d4d8';
 
   return (
     <button onClick={onClick} className="block w-full cursor-pointer text-left">
@@ -194,7 +203,7 @@ function ArrowRow({
                   background: status === 'now' ? `color-mix(in srgb, ${color} 12%, transparent)` : 'transparent',
                 }}
               >
-                {tone === 'response' ? '← response' : 'request →'}
+                {tone === 'response' ? '← response' : tone === 'push' ? '⚡ push' : 'request →'}
               </span>
             </motion.div>
           )}

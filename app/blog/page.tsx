@@ -12,6 +12,7 @@ import {
   GitBranch,
   Zap,
   Terminal,
+  Radio,
   Clock,
   Search,
   X,
@@ -34,6 +35,19 @@ type Post = {
 };
 
 const POSTS: Post[] = [
+  {
+    href: '/blog/how-websockets-work',
+    title: 'How WebSockets Work',
+    excerpt:
+      'What changes when a connection stops being request/response and stays open — traced through the handshake, and a message neither side asked for.',
+    icon: Radio,
+    category: 'Real-Time',
+    tags: ['WebSocket', 'Real-Time', 'Socket.IO', 'SSE'],
+    level: 'Beginner',
+    readTime: '8 min read',
+    readMinutes: 8,
+    theme: 'from-lime-500/10 via-green-500/5 to-emerald-500/10 border-lime-500/20 text-lime-600',
+  },
   {
     href: '/blog/how-to-use-redis-in-nodejs',
     title: 'How to Use Redis in a Node.js API',

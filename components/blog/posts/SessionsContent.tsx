@@ -7,9 +7,9 @@ import {
   Database,
   ShieldCheck,
   LogOut,
-  BrainCog,
   KeyRound,
   GitBranch,
+  Radio,
   Layers,
   Gauge,
   Zap,
@@ -19,7 +19,7 @@ import SequenceDiagram, { type SeqStep } from '@/components/blog/SequenceDiagram
 import { H2, P, UL, LI, Code, Callout, StatRow, CompareGrid } from '@/components/blog/Prose';
 
 const MORE = [
-  { href: '/blog/how-rag-works', title: 'How RAG Works', icon: BrainCog },
+  { href: '/blog/how-websockets-work', title: 'How WebSockets Work', icon: Radio },
   { href: '/blog/how-jwt-works', title: 'How JWT Works', icon: KeyRound },
   { href: '/blog/how-cicd-works', title: 'How CI/CD Works', icon: GitBranch },
   { href: '/blog/how-redis-caching-works', title: 'How Redis Caching Works', icon: Zap },

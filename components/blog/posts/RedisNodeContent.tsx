@@ -10,10 +10,9 @@ import {
   Trash2,
   ShieldAlert,
   Zap,
-  BrainCog,
   KeyRound,
   Cookie,
-  GitBranch,
+  Radio,
   Boxes,
   Gauge,
 } from 'lucide-react';
@@ -25,7 +24,7 @@ const MORE = [
   { href: '/blog/how-redis-caching-works', title: 'How Redis Caching Works', icon: Zap },
   { href: '/blog/how-sessions-work', title: 'How Sessions Work', icon: Cookie },
   { href: '/blog/how-jwt-works', title: 'How JWT Works', icon: KeyRound },
-  { href: '/blog/how-rag-works', title: 'How RAG Works', icon: BrainCog },
+  { href: '/blog/how-websockets-work', title: 'How WebSockets Work', icon: Radio },
 ];
 
 const BUILD_STEPS = [
