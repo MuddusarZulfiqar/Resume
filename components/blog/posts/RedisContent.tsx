@@ -11,7 +11,6 @@ import {
   Trash2,
   Gauge,
   Terminal,
-  KeyRound,
   Cookie,
   Radio,
 } from 'lucide-react';
@@ -23,7 +22,7 @@ const MORE = [
   { href: '/blog/how-to-use-redis-in-nodejs', title: 'Use Redis in a Node.js API', icon: Terminal },
   { href: '/blog/how-websockets-work', title: 'How WebSockets Work', icon: Radio },
   { href: '/blog/how-sessions-work', title: 'How Sessions Work', icon: Cookie },
-  { href: '/blog/how-jwt-works', title: 'How JWT Works', icon: KeyRound },
+  { href: '/blog/how-database-indexes-work', title: 'How Database Indexes Work', icon: Database },
 ];
 
 const MISS_ACTORS = [

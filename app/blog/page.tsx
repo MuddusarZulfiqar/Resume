@@ -13,6 +13,7 @@ import {
   Zap,
   Terminal,
   Radio,
+  Database,
   Clock,
   Search,
   X,
@@ -35,6 +36,19 @@ type Post = {
 };
 
 const POSTS: Post[] = [
+  {
+    href: '/blog/how-database-indexes-work',
+    title: 'How Database Indexes Work',
+    excerpt:
+      'Why the same query can take 400ms on one table and 2ms on another — traced through an actual table scan and an actual tree lookup.',
+    icon: Database,
+    category: 'Databases',
+    tags: ['Database', 'Indexing', 'B-Tree', 'SQL'],
+    level: 'Beginner',
+    readTime: '8 min read',
+    readMinutes: 8,
+    theme: 'from-sky-500/10 via-blue-500/5 to-indigo-500/10 border-sky-500/20 text-sky-600',
+  },
   {
     href: '/blog/how-websockets-work',
     title: 'How WebSockets Work',

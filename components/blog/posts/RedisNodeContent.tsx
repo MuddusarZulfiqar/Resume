@@ -10,7 +10,6 @@ import {
   Trash2,
   ShieldAlert,
   Zap,
-  KeyRound,
   Cookie,
   Radio,
   Boxes,
@@ -23,7 +22,7 @@ import { H2, P, UL, LI, Code, Pre, Callout, StatRow, CompareGrid } from '@/compo
 const MORE = [
   { href: '/blog/how-redis-caching-works', title: 'How Redis Caching Works', icon: Zap },
   { href: '/blog/how-sessions-work', title: 'How Sessions Work', icon: Cookie },
-  { href: '/blog/how-jwt-works', title: 'How JWT Works', icon: KeyRound },
+  { href: '/blog/how-database-indexes-work', title: 'How Database Indexes Work', icon: Database },
   { href: '/blog/how-websockets-work', title: 'How WebSockets Work', icon: Radio },
 ];
 

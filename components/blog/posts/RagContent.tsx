@@ -13,7 +13,6 @@ import {
   MessageCircle,
   KeyRound,
   Cookie,
-  GitBranch,
   Target,
   Gauge,
   ListTree,
@@ -26,7 +25,7 @@ import { H2, P, UL, LI, Code, Callout, StatRow, CompareGrid } from '@/components
 const MORE = [
   { href: '/blog/how-jwt-works', title: 'How JWT Works', icon: KeyRound },
   { href: '/blog/how-sessions-work', title: 'How Sessions Work', icon: Cookie },
-  { href: '/blog/how-cicd-works', title: 'How CI/CD Works', icon: GitBranch },
+  { href: '/blog/how-database-indexes-work', title: 'How Database Indexes Work', icon: Database },
   { href: '/blog/how-redis-caching-works', title: 'How Redis Caching Works', icon: Zap },
 ];
 

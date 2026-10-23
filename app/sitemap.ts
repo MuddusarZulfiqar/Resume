@@ -17,6 +17,7 @@ export default function sitemap(): MetadataRoute.Sitemap {
     '/blog/how-redis-caching-works',
     '/blog/how-to-use-redis-in-nodejs',
     '/blog/how-websockets-work',
+    '/blog/how-database-indexes-work',
   ];
 
   return [
