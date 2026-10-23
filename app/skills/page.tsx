@@ -52,7 +52,7 @@ export default function SkillsBentoPage() {
             transition={{ delay: 0.1 }}
             className="text-4xl sm:text-5xl md:text-6xl font-medium tracking-tight"
           >
-            Tools & <span className="text-zinc-400 italic font-serif">Technologies.</span>
+            Tools & <span className="text-zinc-500 italic font-serif">Technologies.</span>
           </motion.h1>
         </div>
 

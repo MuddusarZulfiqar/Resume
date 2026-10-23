@@ -88,7 +88,7 @@ export default function ProjectsPage() {
                   <div className="p-6">
                     <div className="flex justify-between items-start mb-3">
                       <div>
-                        <span className="text-[9px] font-mono uppercase tracking-widest text-zinc-400 block mb-1">
+                        <span className="text-[9px] font-mono uppercase tracking-widest text-zinc-500 block mb-1">
                           {project.category}
                         </span>
                         <h3 className="text-xl font-semibold text-primary group-hover:text-highlight transition-colors">
@@ -109,12 +109,12 @@ export default function ProjectsPage() {
                 <div className="px-6 pb-6 mt-auto">
                   <div className="flex flex-wrap gap-1.5">
                     {project.tags.slice(0, 3).map((tag: string) => (
-                      <span key={tag} className="text-[9px] font-mono text-zinc-400 bg-zinc-50 px-2 py-0.5 border border-zinc-100 rounded">
+                      <span key={tag} className="text-[9px] font-mono text-zinc-500 bg-zinc-50 px-2 py-0.5 border border-zinc-100 rounded">
                         {tag}
                       </span>
                     ))}
                     {project.tags.length > 3 && (
-                      <span className="text-[9px] font-mono text-zinc-400 bg-zinc-50 px-2 py-0.5 border border-zinc-100 rounded">
+                      <span className="text-[9px] font-mono text-zinc-500 bg-zinc-50 px-2 py-0.5 border border-zinc-100 rounded">
                         +{project.tags.length - 3}
                       </span>
                     )}
@@ -176,7 +176,7 @@ export default function ProjectsPage() {
                     {/* Intro info */}
                     <div className="flex flex-col md:flex-row justify-between items-start gap-4">
                       <div>
-                        <span className="text-[10px] font-mono uppercase tracking-widest text-zinc-400">Project Overview</span>
+                        <span className="text-[10px] font-mono uppercase tracking-widest text-zinc-500">Project Overview</span>
                         <h3 className="text-2xl font-bold mt-1 text-primary">{selectedProject.title}</h3>
                       </div>
                       
@@ -201,7 +201,7 @@ export default function ProjectsPage() {
                         </p>
 
                         <div>
-                          <h4 className="text-sm font-mono uppercase tracking-widest text-zinc-400 mb-4">Key Features</h4>
+                          <h4 className="text-sm font-mono uppercase tracking-widest text-zinc-500 mb-4">Key Features</h4>
                           <ul className="grid grid-cols-1 sm:grid-cols-2 gap-4">
                             {selectedProject.features.map((feature: string) => (
                               <li key={feature} className="text-xs md:text-sm text-zinc-600 flex gap-2">
@@ -215,15 +215,15 @@ export default function ProjectsPage() {
 
                       <div className="md:col-span-4 space-y-6">
                         <div>
-                          <h4 className="text-sm font-mono uppercase tracking-widest text-zinc-400 mb-3">Impact Metrics</h4>
+                          <h4 className="text-sm font-mono uppercase tracking-widest text-zinc-500 mb-3">Impact Metrics</h4>
                           <div className="p-4 bg-zinc-50 border border-zinc-100 rounded-2xl">
-                            <span className="text-xs text-zinc-400 block font-mono">Delivered Outcome</span>
+                            <span className="text-xs text-zinc-500 block font-mono">Delivered Outcome</span>
                             <span className="text-2xl font-bold text-primary block mt-1">{selectedProject.impact}</span>
                           </div>
                         </div>
 
                         <div>
-                          <h4 className="text-sm font-mono uppercase tracking-widest text-zinc-400 mb-3">Technologies Used</h4>
+                          <h4 className="text-sm font-mono uppercase tracking-widest text-zinc-500 mb-3">Technologies Used</h4>
                           <div className="flex flex-wrap gap-2">
                             {selectedProject.tags.map((tag: string) => (
                               <span key={tag} className="text-[10px] font-mono text-zinc-600 bg-zinc-50 px-3 py-1 border border-zinc-150 rounded-lg">

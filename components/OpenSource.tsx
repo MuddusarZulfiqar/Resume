@@ -33,7 +33,7 @@ export default function OpenSource() {
             @{github.username}
             <ArrowUpRight className="w-3.5 h-3.5" />
           </a>
-          <p className="text-[10px] font-mono text-text/40 mt-2">
+          <p className="text-[10px] font-mono text-text/60 mt-2">
             {github.publicRepos} public repos · since {github.memberSince}
           </p>
         </div>

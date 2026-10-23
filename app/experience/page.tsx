@@ -59,7 +59,7 @@ export default function ExperiencePage() {
                   <div>
                     <h3 className="text-xl font-semibold text-primary">{exp.company}</h3>
                     <p className="text-sm font-medium text-zinc-600 mt-1 flex items-center gap-1.5">
-                      <Briefcase className="w-3.5 h-3.5 text-zinc-400" />
+                      <Briefcase className="w-3.5 h-3.5 text-zinc-500" />
                       {exp.role}
                     </p>
                   </div>

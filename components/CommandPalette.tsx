@@ -199,7 +199,7 @@ export default function CommandPalette() {
               className="relative w-full max-w-lg overflow-hidden rounded-2xl border border-primary/15 bg-bg shadow-2xl"
             >
               <div className="flex items-center gap-3 border-b border-primary/10 px-4">
-                <Search className="w-4 h-4 text-text/40 shrink-0" />
+                <Search className="w-4 h-4 text-text/60 shrink-0" />
                 <input
                   ref={inputRef}
                   value={query}
@@ -208,9 +208,9 @@ export default function CommandPalette() {
                     setActive(0);
                   }}
                   placeholder="Type a command or search…"
-                  className="w-full bg-transparent py-4 text-sm text-text placeholder:text-text/40 focus:outline-none font-sans"
+                  className="w-full bg-transparent py-4 text-sm text-text placeholder:text-text/60 focus:outline-none font-sans"
                 />
-                <kbd className="hidden sm:block text-[10px] font-mono text-text/40 border border-primary/15 rounded px-1.5 py-0.5">
+                <kbd className="hidden sm:block text-[10px] font-mono text-text/60 border border-primary/15 rounded px-1.5 py-0.5">
                   Esc
                 </kbd>
               </div>
@@ -220,7 +220,7 @@ export default function CommandPalette() {
                 className="max-h-[52vh] overflow-y-auto custom-scrollbar p-2"
               >
                 {filtered.length === 0 && (
-                  <p className="px-3 py-6 text-center text-xs font-mono text-text/40">
+                  <p className="px-3 py-6 text-center text-xs font-mono text-text/60">
                     No matching commands
                   </p>
                 )}
@@ -233,7 +233,7 @@ export default function CommandPalette() {
                   return (
                     <div key={cmd.id}>
                       {showGroup && (
-                        <p className="px-3 pt-3 pb-1 text-[9px] font-mono uppercase tracking-widest text-text/40">
+                        <p className="px-3 pt-3 pb-1 text-[9px] font-mono uppercase tracking-widest text-text/60">
                           {cmd.group}
                         </p>
                       )}
@@ -249,7 +249,7 @@ export default function CommandPalette() {
                       >
                         <Icon
                           className={`w-4 h-4 shrink-0 ${
-                            isActive ? 'text-bg' : 'text-text/40'
+                            isActive ? 'text-bg' : 'text-text/60'
                           }`}
                         />
                         <span className="flex-1 truncate">{cmd.label}</span>

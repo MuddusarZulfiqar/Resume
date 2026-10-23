@@ -53,7 +53,7 @@ export default function ThemeSwitcher() {
               className={`px-2 py-0.5 md:px-3 md:py-1 rounded-full text-[9px] md:text-[10px] font-mono uppercase tracking-widest transition-all border ${
                 currentFont.name === font.name 
                   ? 'bg-primary text-bg border-primary' 
-                  : 'bg-transparent text-zinc-400 border-zinc-200 hover:border-zinc-400'
+                  : 'bg-transparent text-zinc-500 border-zinc-200 hover:border-zinc-400'
               }`}
             >
               {font.name}

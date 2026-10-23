@@ -122,7 +122,7 @@ export default function AnimationLab() {
       <div className="lg:col-span-7">
         <div className="rounded-2xl border border-primary/15 bg-bg overflow-hidden shadow-sm h-full flex flex-col">
           <div className="flex items-center justify-between px-3 py-2 border-b border-primary/10 bg-primary/[0.03]">
-            <span className="text-[10px] font-mono text-text/40">stage</span>
+            <span className="text-[10px] font-mono text-text/60">stage</span>
             <button
               onClick={() => setToggled((t) => !t)}
               className="inline-flex items-center gap-1.5 rounded-full bg-primary text-bg px-3 py-1 text-[11px] font-medium hover:opacity-90 transition-opacity"

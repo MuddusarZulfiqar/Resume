@@ -61,7 +61,7 @@ export default function NpmPackages() {
             View monorepo
             <ArrowUpRight className="w-3.5 h-3.5" />
           </a>
-          <p className="text-[10px] font-mono text-text/40 mt-2">
+          <p className="text-[10px] font-mono text-text/60 mt-2">
             {npmPackages.packages.length} published packages · MIT licensed
           </p>
         </div>
@@ -132,7 +132,7 @@ export default function NpmPackages() {
                   >
                     Core engine
                   </span>
-                  <span className="text-[10px] font-mono text-text/40">v{core.version}</span>
+                  <span className="text-[10px] font-mono text-text/60">v{core.version}</span>
                 </div>
                 <h3 className="text-xl font-semibold text-primary font-mono mb-1.5">{core.name}</h3>
                 <p className="text-sm text-text/60 leading-relaxed max-w-xl">{core.description}</p>
@@ -193,7 +193,7 @@ export default function NpmPackages() {
                     <RoleIcon className="w-4 h-4 text-primary" />
                   </div>
                   <div>
-                    <span className="text-[9px] font-mono uppercase tracking-widest text-text/40 block">
+                    <span className="text-[9px] font-mono uppercase tracking-widest text-text/60 block">
                       {pkg.role}
                     </span>
                     <h3 className="text-sm font-semibold text-primary font-mono">{pkg.name}</h3>

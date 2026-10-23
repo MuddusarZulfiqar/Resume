@@ -165,7 +165,7 @@ export function StatRow({ stats }: { stats: { icon: LucideIcon; label: string; v
           <div key={s.label} className="rounded-xl border border-primary/10 bg-zinc-50/60 p-4">
             <Icon className="w-4 h-4 text-highlight mb-2" />
             <p className="text-sm md:text-base font-semibold text-primary leading-snug">{s.value}</p>
-            <p className="text-[10px] md:text-xs font-mono uppercase tracking-wider text-text/40 mt-1">{s.label}</p>
+            <p className="text-[10px] md:text-xs font-mono uppercase tracking-wider text-text/60 mt-1">{s.label}</p>
           </div>
         );
       })}

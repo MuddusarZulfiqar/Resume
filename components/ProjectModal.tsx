@@ -74,7 +74,7 @@ export default function ProjectModal({ project, isOpen, onClose }: ProjectModalP
                     <span className="px-2 py-0.5 md:px-3 md:py-1 text-[9px] md:text-[10px] font-mono tracking-widest uppercase bg-primary text-bg rounded">
                       {project.category}
                     </span>
-                    <span className="text-[10px] md:text-xs font-medium text-zinc-400">
+                    <span className="text-[10px] md:text-xs font-medium text-zinc-500">
                       {project.impact}
                     </span>
                   </div>
@@ -94,7 +94,7 @@ export default function ProjectModal({ project, isOpen, onClose }: ProjectModalP
                 <div className="space-y-8 md:space-y-12">
                   {/* Overview */}
                   <section>
-                    <h3 className="text-[10px] md:text-sm font-bold uppercase tracking-widest text-zinc-400 mb-3 md:mb-4">Overview</h3>
+                    <h3 className="text-[10px] md:text-sm font-bold uppercase tracking-widest text-zinc-500 mb-3 md:mb-4">Overview</h3>
                     <p className="text-lg md:text-xl text-zinc-600 leading-relaxed">
                       {project.longDescription || project.description}
                     </p>
@@ -103,7 +103,7 @@ export default function ProjectModal({ project, isOpen, onClose }: ProjectModalP
                   {/* Key Features */}
                   {project.features && (
                     <section>
-                      <h3 className="text-[10px] md:text-sm font-bold uppercase tracking-widest text-zinc-400 mb-4 md:mb-6">Key Features</h3>
+                      <h3 className="text-[10px] md:text-sm font-bold uppercase tracking-widest text-zinc-500 mb-4 md:mb-6">Key Features</h3>
                       <div className="grid grid-cols-1 md:grid-cols-2 gap-4 md:gap-6">
                         {project.features.map((feature, i) => (
                           <div key={i} className="flex gap-3 md:gap-4 p-4 rounded-xl md:rounded-2xl bg-zinc-50 border border-zinc-100">

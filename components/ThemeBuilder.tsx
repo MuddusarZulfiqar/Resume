@@ -110,7 +110,7 @@ export default function ThemeBuilder() {
                   </label>
                   <div className="flex-1 min-w-0">
                     <p className="text-xs font-medium text-primary">{t.label}</p>
-                    <p className="text-[10px] font-mono text-text/40 truncate">
+                    <p className="text-[10px] font-mono text-text/60 truncate">
                       {t.cssVar}
                     </p>
                   </div>
@@ -182,7 +182,7 @@ export default function ThemeBuilder() {
                 Reset
               </button>
             </div>
-            <p className="text-[10px] font-mono text-text/40">
+            <p className="text-[10px] font-mono text-text/60">
               Tip: picking a swatch in the bottom theme switcher resets a
               site-wide apply.
             </p>
@@ -200,7 +200,7 @@ export default function ThemeBuilder() {
                   <span className="w-2.5 h-2.5 rounded-full bg-primary/20 block" />
                   <span className="w-2.5 h-2.5 rounded-full bg-primary/20 block" />
                 </span>
-                <span className="mx-auto text-[10px] font-mono text-text/40">
+                <span className="mx-auto text-[10px] font-mono text-text/60">
                   live preview
                 </span>
               </div>
@@ -248,7 +248,7 @@ export default function ThemeBuilder() {
                   <span className="w-3 h-3 rounded-full bg-primary block" />
                   <span className="w-3 h-3 rounded-full bg-accent block" />
                   <span className="w-3 h-3 rounded-full bg-highlight block" />
-                  <span className="text-[10px] font-mono text-text/40 ml-1">
+                  <span className="text-[10px] font-mono text-text/60 ml-1">
                     primary · accent · highlight
                   </span>
                 </div>

@@ -134,7 +134,7 @@ export default function PipelineDiagram({
                 </motion.div>
                 <span
                   className={`text-[11px] font-mono uppercase tracking-wider text-center leading-tight transition-colors break-words ${
-                    isActive ? 'text-primary font-semibold' : 'text-text/40'
+                    isActive ? 'text-primary font-semibold' : 'text-text/60'
                   }`}
                 >
                   {s.title}
@@ -198,7 +198,7 @@ export default function PipelineDiagram({
               Step {active + 1} of {n}
             </span>
             {step.tag && (
-              <span className="text-[10px] font-mono uppercase tracking-widest text-text/40 border border-primary/10 rounded-full px-2 py-0.5">
+              <span className="text-[10px] font-mono uppercase tracking-widest text-text/60 border border-primary/10 rounded-full px-2 py-0.5">
                 {step.tag}
               </span>
             )}

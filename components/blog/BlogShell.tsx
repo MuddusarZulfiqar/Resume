@@ -54,7 +54,7 @@ export default function BlogShell({
               <Icon className="w-3 h-3" />
               {category}
             </span>
-            <span className="inline-flex items-center gap-1.5 text-[10px] font-mono uppercase tracking-widest text-text/40">
+            <span className="inline-flex items-center gap-1.5 text-[10px] font-mono uppercase tracking-widest text-text/60">
               <Clock className="w-3 h-3" />
               {readTime}
             </span>
@@ -78,7 +78,7 @@ export default function BlogShell({
 
         {/* More from the series */}
         <div className="mt-20 pt-10 border-t border-primary/10">
-          <span className="text-[10px] font-mono uppercase tracking-widest text-text/40 block mb-5">
+          <span className="text-[10px] font-mono uppercase tracking-widest text-text/60 block mb-5">
             Keep reading
           </span>
           <div className="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-4 gap-3">
@@ -91,7 +91,7 @@ export default function BlogShell({
                   className="group flex items-center justify-between gap-3 rounded-xl border border-primary/10 px-4 py-3.5 hover:border-highlight/40 hover:bg-primary/[0.02] transition-all"
                 >
                   <span className="flex items-center gap-2.5 min-w-0">
-                    <EntryIcon className="w-4 h-4 text-text/40 shrink-0" />
+                    <EntryIcon className="w-4 h-4 text-text/60 shrink-0" />
                     <span className="text-sm text-text/80 truncate">{entry.title}</span>
                   </span>
                   <ArrowRight className="w-3.5 h-3.5 text-text/30 group-hover:text-highlight group-hover:translate-x-0.5 transition-all shrink-0" />

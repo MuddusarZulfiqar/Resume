@@ -2,13 +2,17 @@
 
 import Hero from '@/components/Hero';
 import Link from 'next/link';
+import dynamic from 'next/dynamic';
 import { motion } from 'motion/react';
 import { Briefcase, Cpu, FolderGit2, FlaskConical, BookOpen, ArrowRight } from 'lucide-react';
-import AiTerminal from '@/components/AiTerminal';
 import Contact from '@/components/Contact';
 import About from '@/components/About';
 import Testimonials from '@/components/Testimonials';
 import Credentials from '@/components/Credentials';
+
+// Floating chat widget — not part of the initial viewport and not needed
+// until a visitor actually opens it, so keep it out of the critical bundle.
+const AiTerminal = dynamic(() => import('@/components/AiTerminal'), { ssr: false });
 
 export default function PortfolioPage() {
   const portals = [
@@ -95,7 +99,7 @@ export default function PortfolioPage() {
                       <div className={`p-3 rounded-xl border ${portal.color}`}>
                         <portal.icon className="w-5 h-5" />
                       </div>
-                      <span className="text-[9px] font-mono text-zinc-400 bg-zinc-100 px-2.5 py-1 rounded-full uppercase tracking-wider font-medium">
+                      <span className="text-[9px] font-mono text-zinc-500 bg-zinc-100 px-2.5 py-1 rounded-full uppercase tracking-wider font-medium">
                         {portal.badge.split(' · ')[0]}
                       </span>
                     </div>

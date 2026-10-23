@@ -16,20 +16,19 @@ export default function Hero() {
       {/* Dotted Grid Background */}
       <div className="absolute inset-0 -z-20 bg-[linear-gradient(to_right,#80808008_1px,transparent_1px),linear-gradient(to_bottom,#80808008_1px,transparent_1px)] bg-[size:24px_24px] [mask-image:radial-gradient(ellipse_80%_80%_at_50%_-20%,#000_70%,transparent_100%)]" />
       
-      {/* Ambient Lighting Blobs */}
-      <div className="absolute top-1/4 left-1/12 -z-10 w-72 h-72 rounded-full bg-accent/8 blur-[100px] animate-pulse" />
-      <div className="absolute top-1/3 right-1/12 -z-10 w-96 h-96 rounded-full bg-primary/5 blur-[120px] animate-pulse" style={{ animationDuration: '8s' }} />
+      {/* Ambient Lighting Blobs — static, not animated: a continuous, infinite
+          opacity pulse on a heavily-blurred element is expensive to keep
+          compositing on every frame for a barely-visible decorative effect. */}
+      <div className="absolute top-1/4 left-1/12 -z-10 w-72 h-72 rounded-full bg-accent/8 blur-[100px]" />
+      <div className="absolute top-1/3 right-1/12 -z-10 w-96 h-96 rounded-full bg-primary/5 blur-[120px]" />
 
       <div className="max-w-7xl mx-auto w-full grid grid-cols-1 lg:grid-cols-12 gap-12 lg:gap-16 items-center z-10">
         
-        {/* Left Column (Primary Copy) */}
+        {/* Left Column (Primary Copy) — intentionally unanimated: this is the
+            LCP content, and fading it in from opacity:0 via JS only delays
+            when it actually counts as painted. */}
         <div className="lg:col-span-7 flex flex-col justify-center">
-          <motion.div
-            initial={{ opacity: 0, y: 15 }}
-            animate={{ opacity: 1, y: 0 }}
-            transition={{ duration: 0.5 }}
-            className="flex items-center gap-2 mb-6"
-          >
+          <div className="flex items-center gap-2 mb-6">
             <span className="relative flex h-2 w-2">
               <span className="animate-ping absolute inline-flex h-full w-full rounded-full bg-highlight opacity-75"></span>
               <span className="relative inline-flex rounded-full h-2 w-2 bg-highlight"></span>
@@ -37,34 +36,23 @@ export default function Hero() {
             <span className="text-[10px] md:text-xs font-mono tracking-widest uppercase text-zinc-500">
               Available for new opportunities
             </span>
-          </motion.div>
+          </div>
 
-          <motion.div
-            initial={{ opacity: 0, y: 20 }}
-            animate={{ opacity: 1, y: 0 }}
-            transition={{ duration: 0.5, delay: 0.1 }}
-          >
-            <h1 className="text-5xl sm:text-6xl lg:text-7xl xl:text-8xl font-medium tracking-tight leading-[0.95] md:leading-[0.9] mb-8 font-sans">
-              {profile.name.split(' ')[0]} <br />
-              <span className="text-accent hover:text-primary transition-colors duration-300 relative inline-block group">
-                {profile.lastName}
-                <span className="absolute bottom-1 left-0 w-0 h-1 bg-highlight group-hover:w-full transition-all duration-300" />
-              </span>
-            </h1>
-          </motion.div>
+          <h1 className="text-5xl sm:text-6xl lg:text-7xl xl:text-8xl font-medium tracking-tight leading-[0.95] md:leading-[0.9] mb-8 font-sans">
+            {profile.name.split(' ')[0]} <br />
+            <span className="text-accent hover:text-primary transition-colors duration-300 relative inline-block group">
+              {profile.lastName}
+              <span className="absolute bottom-1 left-0 w-0 h-1 bg-highlight group-hover:w-full transition-all duration-300" />
+            </span>
+          </h1>
 
-          <motion.div
-            initial={{ opacity: 0, y: 20 }}
-            animate={{ opacity: 1, y: 0 }}
-            transition={{ duration: 0.5, delay: 0.2 }}
-            className="max-w-xl"
-          >
+          <div className="max-w-xl">
             <p className="text-lg lg:text-xl text-zinc-600 leading-relaxed mb-10 font-sans">
               {profile.title} with <span className="text-primary font-semibold border-b-2 border-highlight/40 pb-0.5">{profile.yearsOfExp} years</span> of experience delivering scalable web and mobile applications for <span className="text-primary font-semibold border-b-2 border-highlight/40 pb-0.5">{profile.activeUsers} users</span>.
             </p>
-            
+
             <div className="flex flex-wrap items-center gap-4">
-              <a 
+              <a
                 href={`mailto:${profile.email}`}
                 className="group relative flex items-center gap-2 px-7 py-3.5 bg-primary text-bg rounded-full hover:shadow-lg hover:shadow-primary/10 transition-all duration-300 text-sm md:text-base font-medium"
               >
@@ -104,17 +92,12 @@ export default function Hero() {
                 </a>
               </div>
             </div>
-          </motion.div>
+          </div>
         </div>
 
         {/* Right Column (Interactive Engineering Dashboard) */}
         <div className="lg:col-span-5 w-full flex justify-center items-center">
-          <motion.div
-            initial={{ opacity: 0, scale: 0.95 }}
-            animate={{ opacity: 1, scale: 1 }}
-            transition={{ duration: 0.6, delay: 0.2 }}
-            className="w-full bg-white/80 backdrop-blur-md border border-primary/10 rounded-2xl shadow-2xl overflow-hidden flex flex-col max-w-lg aspect-[4/3] md:aspect-[1.25]"
-          >
+          <div className="w-full bg-white/80 backdrop-blur-md border border-primary/10 rounded-2xl shadow-2xl overflow-hidden flex flex-col max-w-lg aspect-[4/3] md:aspect-[1.25]">
             {/* Window Titlebar */}
             <div className="flex items-center justify-between px-3 py-2 md:px-4 md:py-3 bg-primary/[0.02] border-b border-primary/10 gap-3">
               <div className="flex items-center gap-1.5 shrink-0">
@@ -410,7 +393,7 @@ export default function Hero() {
                 )}
               </AnimatePresence>
             </div>
-          </motion.div>
+          </div>
         </div>
 
       </div>
@@ -442,7 +425,7 @@ export default function Hero() {
                 <p className="text-xs md:text-sm font-medium uppercase tracking-wider text-zinc-800">
                   {stat.label}
                 </p>
-                <p className="text-[10px] md:text-xs text-zinc-400">
+                <p className="text-[10px] md:text-xs text-zinc-500">
                   {stat.desc}
                 </p>
               </div>

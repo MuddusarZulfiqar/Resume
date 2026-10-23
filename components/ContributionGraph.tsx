@@ -73,7 +73,7 @@ export default function ContributionGraph() {
             {monthLabels.map((label, ci) => (
               <div key={ci} className="w-2.5 relative">
                 {label && (
-                  <span className="absolute left-0 top-0 text-[9px] font-mono text-text/40 whitespace-nowrap">
+                  <span className="absolute left-0 top-0 text-[9px] font-mono text-text/60 whitespace-nowrap">
                     {label}
                   </span>
                 )}
@@ -104,7 +104,7 @@ export default function ContributionGraph() {
         </div>
       </div>
 
-      <div className="flex items-center justify-end gap-1.5 mt-4 text-[10px] font-mono text-text/40">
+      <div className="flex items-center justify-end gap-1.5 mt-4 text-[10px] font-mono text-text/60">
         Less
         {LEVEL_CLASS.map((c, i) => (
           <span key={i} className={`w-2.5 h-2.5 rounded-[2px] ${c}`} />

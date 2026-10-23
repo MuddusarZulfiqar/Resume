@@ -7,7 +7,7 @@ import { SpeedInsights } from '@vercel/speed-insights/next';
 import { ThemeProvider } from '@/components/ThemeProvider';
 import ThemeSwitcher from '@/components/ThemeSwitcher';
 import Navbar from '@/components/Navbar';
-import CommandPalette from '@/components/CommandPalette';
+import DeferredCommandPalette from '@/components/DeferredCommandPalette';
 
 const inter = Inter({ subsets: ['latin'], variable: '--font-inter' });
 const jetbrainsMono = JetBrains_Mono({ subsets: ['latin'], variable: '--font-mono' });
@@ -151,7 +151,7 @@ export default function RootLayout({ children }: { children: React.ReactNode }) 
           <Navbar />
           {children}
           <ThemeSwitcher />
-          <CommandPalette />
+          <DeferredCommandPalette />
         </ThemeProvider>
 
         <Analytics />

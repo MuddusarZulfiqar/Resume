@@ -188,7 +188,7 @@ export default function PerformancePanel() {
                 className="rounded-2xl border border-primary/10 p-5 bg-bg flex flex-col justify-between"
               >
                 <div className="flex items-center justify-between">
-                  <Icon className="w-4 h-4 text-text/40" />
+                  <Icon className="w-4 h-4 text-text/60" />
                   {rating && (
                     <span
                       className={`text-[9px] font-mono uppercase tracking-widest px-2 py-0.5 rounded-full border ${RATING_CLASS[rating]}`}
@@ -201,7 +201,7 @@ export default function PerformancePanel() {
                   {m.value != null ? m.format(m.value) : '—'}
                 </p>
                 <p className="text-xs font-medium text-primary mt-1">{m.label}</p>
-                <p className="text-[10px] font-mono text-text/40 mt-0.5">
+                <p className="text-[10px] font-mono text-text/60 mt-0.5">
                   {m.hint}
                 </p>
               </motion.div>
@@ -209,7 +209,7 @@ export default function PerformancePanel() {
           })}
         </div>
 
-        <p className="mt-6 text-[10px] font-mono text-text/40">
+        <p className="mt-6 text-[10px] font-mono text-text/60">
           LCP / FCP / TTFB are one-shot page-load metrics. A dash means the
           browser hasn&apos;t reported that metric yet or doesn&apos;t support
           it.

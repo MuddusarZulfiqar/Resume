@@ -49,7 +49,7 @@ export default function Credentials() {
               {education.degree}
             </p>
             <p className="text-sm text-text/60 mt-1">{education.institution}</p>
-            <p className="text-xs font-mono text-text/40 mt-3">
+            <p className="text-xs font-mono text-text/60 mt-3">
               {education.period}
             </p>
           </motion.div>

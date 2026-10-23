@@ -23,7 +23,7 @@ export default function Experience() {
                 <p className="font-mono text-[10px] md:text-xs text-accent uppercase tracking-widest mb-2">{exp.period}</p>
                 <h3 className="text-xl md:text-2xl font-medium">{exp.company}</h3>
                 <p className="text-sm md:text-base text-zinc-500">{exp.role}</p>
-                <p className="text-[10px] md:text-xs text-zinc-400 mt-2">{exp.location}</p>
+                <p className="text-[10px] md:text-xs text-zinc-500 mt-2">{exp.location}</p>
               </div>
               <div className="lg:col-span-8">
                 <ul className="space-y-3 md:space-y-4">

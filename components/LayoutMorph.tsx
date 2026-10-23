@@ -49,7 +49,7 @@ export default function LayoutMorph() {
             </button>
           );
         })}
-        <span className="ml-auto text-[10px] font-mono text-text/40">
+        <span className="ml-auto text-[10px] font-mono text-text/60">
           one dataset · three layouts
         </span>
       </div>
@@ -62,7 +62,7 @@ export default function LayoutMorph() {
               initial={{ opacity: 0, height: 0 }}
               animate={{ opacity: 1, height: 'auto' }}
               exit={{ opacity: 0, height: 0 }}
-              className="grid grid-cols-[2fr_1.4fr_1fr] gap-3 px-3 pb-2 mb-1 border-b border-primary/10 text-[10px] font-mono uppercase tracking-widest text-text/40"
+              className="grid grid-cols-[2fr_1.4fr_1fr] gap-3 px-3 pb-2 mb-1 border-b border-primary/10 text-[10px] font-mono uppercase tracking-widest text-text/60"
             >
               <span>Project</span>
               <span>Category</span>
@@ -106,7 +106,7 @@ export default function LayoutMorph() {
                   <p className="text-sm font-medium text-primary truncate">
                     {item.title}
                   </p>
-                  <p className="text-[11px] font-mono text-text/40 truncate hidden sm:block">
+                  <p className="text-[11px] font-mono text-text/60 truncate hidden sm:block">
                     {item.category}
                   </p>
                   <span className="ml-auto text-[10px] font-mono px-2 py-0.5 rounded-full bg-primary/5 border border-primary/10 text-text/60 shrink-0">

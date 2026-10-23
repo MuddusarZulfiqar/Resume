@@ -51,7 +51,7 @@ export default function Testimonials() {
               <figcaption className="mt-5 pt-4 border-t border-primary/10">
                 <p className="text-sm font-semibold text-primary">{t.name}</p>
                 <p className="text-xs text-text/60 mt-0.5">{t.title}</p>
-                <p className="text-[10px] font-mono uppercase tracking-widest text-text/40 mt-2">
+                <p className="text-[10px] font-mono uppercase tracking-widest text-text/60 mt-2">
                   {t.relation} · {t.date}
                 </p>
               </figcaption>

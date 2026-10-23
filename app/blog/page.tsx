@@ -196,7 +196,7 @@ export default function BlogIndexPage() {
             move.
           </p>
 
-          <div className="flex flex-wrap items-center gap-x-5 gap-y-1.5 mt-6 text-[11px] font-mono uppercase tracking-widest text-zinc-400">
+          <div className="flex flex-wrap items-center gap-x-5 gap-y-1.5 mt-6 text-[11px] font-mono uppercase tracking-widest text-zinc-500">
             <span className="inline-flex items-center gap-1.5">
               <BookOpen className="w-3.5 h-3.5" />
               {POSTS.length} article{POSTS.length === 1 ? '' : 's'}
@@ -216,20 +216,20 @@ export default function BlogIndexPage() {
         <div className="sticky top-16 z-20 -mx-6 px-6 lg:-mx-24 lg:px-24 py-3 mb-10 bg-zinc-50/80 backdrop-blur-md border-y border-zinc-200/60">
           <div className="max-w-5xl mx-auto flex flex-col md:flex-row md:items-center gap-3">
             <div className="relative flex-1 min-w-0">
-              <Search className="absolute left-3.5 top-1/2 -translate-y-1/2 w-4 h-4 text-zinc-400 pointer-events-none" />
+              <Search className="absolute left-3.5 top-1/2 -translate-y-1/2 w-4 h-4 text-zinc-500 pointer-events-none" />
               <input
                 type="text"
                 value={query}
                 onChange={(e) => setQuery(e.target.value)}
                 placeholder="Search articles, topics, tags…"
                 aria-label="Search articles"
-                className="w-full pl-10 pr-9 py-2.5 rounded-full border border-zinc-200 bg-white text-sm text-zinc-800 placeholder:text-zinc-400 focus:outline-none focus:ring-2 focus:ring-primary/15 focus:border-primary/30 transition-all"
+                className="w-full pl-10 pr-9 py-2.5 rounded-full border border-zinc-200 bg-white text-sm text-zinc-800 placeholder:text-zinc-500 focus:outline-none focus:ring-2 focus:ring-primary/15 focus:border-primary/30 transition-all"
               />
               {query && (
                 <button
                   onClick={() => setQuery('')}
                   aria-label="Clear search"
-                  className="absolute right-3 top-1/2 -translate-y-1/2 p-0.5 rounded-full text-zinc-400 hover:text-primary hover:bg-primary/5 transition-colors cursor-pointer"
+                  className="absolute right-3 top-1/2 -translate-y-1/2 p-0.5 rounded-full text-zinc-500 hover:text-primary hover:bg-primary/5 transition-colors cursor-pointer"
                 >
                   <X className="w-3.5 h-3.5" />
                 </button>
@@ -252,7 +252,7 @@ export default function BlogIndexPage() {
                     }`}
                   >
                     {cat}
-                    <span className={isActive ? 'text-bg/60' : 'text-zinc-400'}>{count}</span>
+                    <span className={isActive ? 'text-bg/60' : 'text-zinc-500'}>{count}</span>
                   </button>
                 );
               })}
@@ -321,7 +321,7 @@ export default function BlogIndexPage() {
 
         {/* Result count when filtering */}
         {isFiltering && (
-          <p className="text-xs font-mono uppercase tracking-widest text-zinc-400 mb-5">
+          <p className="text-xs font-mono uppercase tracking-widest text-zinc-500 mb-5">
             {filtered.length} {filtered.length === 1 ? 'result' : 'results'}
             {query && (
               <>
@@ -404,7 +404,7 @@ export default function BlogIndexPage() {
               className="flex flex-col items-center justify-center text-center py-24 rounded-3xl border border-dashed border-zinc-200"
             >
               <div className="p-4 rounded-2xl bg-zinc-100 mb-4">
-                <Search className="w-6 h-6 text-zinc-400" />
+                <Search className="w-6 h-6 text-zinc-500" />
               </div>
               <p className="text-base font-medium text-zinc-700 mb-1">No articles found</p>
               <p className="text-sm text-zinc-500 mb-6 max-w-xs">

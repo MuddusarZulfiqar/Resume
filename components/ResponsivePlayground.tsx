@@ -225,7 +225,7 @@ export default function ResponsivePlayground() {
                 />
                 <span
                   className={`mt-0.5 text-[9px] font-mono ${
-                    passed ? 'text-primary' : 'text-text/40'
+                    passed ? 'text-primary' : 'text-text/60'
                   }`}
                 >
                   {m.label}
@@ -255,7 +255,7 @@ export default function ResponsivePlayground() {
                   <span className="w-2.5 h-2.5 rounded-full bg-primary/20 block" />
                   <span className="w-2.5 h-2.5 rounded-full bg-primary/20 block" />
                 </span>
-                <span className="mx-auto text-[10px] font-mono text-text/40 truncate">
+                <span className="mx-auto text-[10px] font-mono text-text/60 truncate">
                   preview · {bp.note}
                 </span>
               </div>
@@ -363,7 +363,7 @@ function DemoSite() {
           </div>
         </div>
         <div className="w-full @min-[900px]:w-56 shrink-0 rounded-lg border border-primary/10 bg-primary/[0.03] aspect-[4/3] flex items-center justify-center">
-          <span className="font-mono text-[10px] text-text/40">preview.tsx</span>
+          <span className="font-mono text-[10px] text-text/60">preview.tsx</span>
         </div>
       </div>
 

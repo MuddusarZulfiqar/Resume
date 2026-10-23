@@ -75,7 +75,7 @@ export default function ComponentStates() {
             </>
           )}
         </button>
-        <p className="text-[10px] font-mono text-text/40 mt-2">
+        <p className="text-[10px] font-mono text-text/60 mt-2">
           idle → loading → done → idle
         </p>
       </section>
@@ -89,7 +89,7 @@ export default function ComponentStates() {
           {BUTTON_STATES.map((s) => (
             <div key={s.label} className="flex flex-col items-start gap-2">
               <span className={`${BUTTON_BASE} ${s.className}`}>{s.content}</span>
-              <span className="text-[10px] font-mono text-text/40">{s.label}</span>
+              <span className="text-[10px] font-mono text-text/60">{s.label}</span>
             </div>
           ))}
         </div>
@@ -121,7 +121,7 @@ export default function ComponentStates() {
                     </span>
                   </>
                 ) : (
-                  <span className="text-[10px] font-mono text-text/40">
+                  <span className="text-[10px] font-mono text-text/60">
                     {s.label}
                   </span>
                 )}
